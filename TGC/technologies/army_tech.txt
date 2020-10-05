@@ -831,7 +831,6 @@ flintlock_rifles = {
 	unciv_military = yes
 	
 	activate_unit = infantry
-	#combat_width = -1
 
 	ai_chance = {
 		factor = 2
@@ -1712,8 +1711,8 @@ iron_muzzle_loaded_artillery = {
 
 	artillery = {
 		attack = 0.25
-		support = 0.5
 		supply_consumption = 0.15
+		support = 0.5
 	}
 	
 	ai_chance = {
@@ -1853,8 +1852,8 @@ iron_breech_loaded_artillery = {
 
 	artillery = {
 		attack = 0.25
-		support = 0.5
 		supply_consumption = 0.3
+		support = 0.5
 	}
 
 	ai_chance = {
@@ -1995,8 +1994,8 @@ steel_breech_loaded_artillery = {
 
 	artillery = {
 		attack = 0.5
-		support = 0.5
 		supply_consumption = 0.3
+		support = 0.5
 	}
 	
 	ai_chance = {
@@ -2137,8 +2136,8 @@ indirect_artillery_fire = {
 	artillery = {
 		attack = 0.5
 		defence = 2
-		support = 1
 		supply_consumption = 0.3
+		support = 1
 	}
 	
 	ai_chance = {
@@ -2279,8 +2278,8 @@ heavy_armament_dunno = {
 	artillery = {
 		attack = 0.5
 		defence = 2
-		support = 1
 		supply_consumption = 0.3
+		support = 1
 	}
 	
 	ai_chance = {

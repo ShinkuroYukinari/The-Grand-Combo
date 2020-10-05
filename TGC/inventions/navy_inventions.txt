@@ -216,6 +216,28 @@ sea_power_doctrine = {
 	}
 }
 
+#Torpedo Tactics
+torpedo_tactics = {
+	limit = {
+		blue_and_brown_water_schools = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 5
+			invention = self_propelled_torpedoes
+		}
+		modifier = {
+			factor = 5
+			war = yes
+		}
+	}
+	effect = {
+		cruiser = { torpedo_attack = 1 }
+	}	
+}
+
 ## High Seas Battle Fleet ##
 # Defensive Attitude #
 defensive_attitude = {
@@ -659,7 +681,7 @@ steam_auxiliaries = {
 		base = 0
 		modifier = {
 			factor = 5
-			high_n_low_pressure_steam_engines = 1
+			compound_steam_engines = 1
 		}
 	}
 	
@@ -2060,7 +2082,7 @@ harvey_steel_armour = {
 		base = 2
 		modifier = {
 			factor = 2
-			cheap_steel = 1
+			drilling_and_blasting = 1
 		}
 		modifier = {
 			factor = 2

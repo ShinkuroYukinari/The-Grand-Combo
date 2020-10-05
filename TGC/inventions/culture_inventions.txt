@@ -1243,9 +1243,6 @@ inclosure = {
 		rgo_goods_throughput = {
 			cattle = 0.15
 		}
-		factory_goods_output = {
-			horses = 0.05
-		}
 		rgo_goods_throughput = {
 			wool = 0.25
 		}
@@ -1266,7 +1263,7 @@ industrial_bakeries = {
 		}
 	}
 	effect = {
-		activate_building = bakery
+
 	}
 }
 
@@ -3851,7 +3848,6 @@ the_dark_continent = {
 				has_country_flag = congo_master
 				has_country_flag = historical_congo
 				has_country_flag = civilizing_congo
-				has_country_modifier = integrating_colony
 			}
 		}
 		modifier = {

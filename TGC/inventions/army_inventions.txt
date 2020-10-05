@@ -1714,7 +1714,7 @@ steel_small_arms_production = {
 		}
 	}
 	effect = {
-		activate_building = late_small_arms_factory 
+#		activate_building = late_small_arms_factory 
 	}
 }
 
@@ -2740,7 +2740,7 @@ medium_tanks = {
 	effect = {
 		tank = {
 			attack = 5
-			defense = 1
+			defence = 1
 			maximum_speed = 2
 			supply_consumption = 0.5
 		}
@@ -3711,7 +3711,6 @@ field_training = {
 	}
 }
 
-
 # Military Academic Training #
 army_academic_training = {
 	limit = {
@@ -3766,7 +3765,7 @@ stables = {
 		base = 6
 	}
 	effect = {
-		activate_building = stables 
+#		activate_building = stables 
 	}
 }
 

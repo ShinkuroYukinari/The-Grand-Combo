@@ -2153,7 +2153,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_terrainimg_urban_poznan"
-		texturefile = "gfx\\interface\\terrain_urban_pozan.tga"
+		texturefile = "gfx\\interface\\terrain_urban_poznan.tga"
 		norefcount = yes
 	}
 

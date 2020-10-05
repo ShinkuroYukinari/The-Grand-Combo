@@ -1,230 +1,288 @@
-# goods types, organized by category
+#############
+### Goods ###
+#############
 
+### Military Goods ###
+## Built by Factories & Artisans ##
 military_goods = {
-	ammunition = { 
-		cost = 8.00
-		color = { 208 202 127 } 
-		available_from_start = yes
-	}
-	small_arms = { 
-		cost = 17.00 
-		color = { 189 118 22 }
-		available_from_start = yes
-	}
-	artillery = { 
-		cost = 30.00 
-		color = { 145 130 86 }
-		available_from_start = yes
-	}
-	canned_food = { 
-		cost = 8.00 
-		color = { 255 39 12 }
-	}
-	barrels = {	
-		cost = 78.00 
-		color = { 55 41 9 }
-		available_from_start = no 
-	}
 	aeroplanes = { 
-		cost = 90.00 
+		cost = 110.00 
 		color = { 221 213 182 }
 		available_from_start = no
 	}
+	ammunition = { 
+		cost = 18.00
+		color = { 208 202 127 } 
+		available_from_start = yes
+		overseas_penalty = yes
+	}
+	artillery = { 
+		cost = 60.00 
+		color = { 145 130 86 }
+		available_from_start = yes
+		overseas_penalty = yes
+	}
+	barrels = {	
+		cost = 98.00 
+		color = { 55 41 9 }
+		available_from_start = no 
+	}
+	canned_food = { 
+		cost = 16.00 
+		color = { 255 39 12 }
+		available_from_start = yes
+		overseas_penalty = yes
+	}
+	small_arms = { 
+		cost = 37.00
+		color = { 189 118 22 }
+		available_from_start = yes
+		overseas_penalty = yes
+	}
 }
 
+### Industrial Goods ###
+## Built by Factories & Artisans ##
+industrial_goods = {
+	cement = { 
+		cost = 16.00
+		color = { 185 187 164 }
+		available_from_start = yes
+	}
+	clipper_convoy = { 
+		cost = 42.00 
+		color = { 21 65 30 }
+		available_from_start = yes
+		overseas_penalty = yes
+	}
+	electric_gear = { 
+		cost = 16.00 
+		color = { 255 255 0 }
+		available_from_start = no
+	}
+	explosives = { 
+		cost = 20.00
+		color = { 192 68 20 }
+		available_from_start = yes
+	}
+	fabric = { 
+		cost = 1.80
+		color = { 186 50 40 }
+		available_from_start = yes
+	}
+	fertilizer = { 
+		cost = 10.00
+		color = { 133 101 35 }
+		available_from_start = yes
+	}
+	fuel = { 
+		cost = 25.00 
+		color = { 145 110 89 }
+		available_from_start = no
+	}
+	glass = { 
+		cost = 2.90
+		color = { 201 200 199 }
+		available_from_start = yes
+	}
+	lumber = { 
+		cost = 1.00
+		color = { 180 94 26 }
+		available_from_start = yes
+	}
+	machine_parts = { 
+		cost = 36.50
+		color = { 177 198 196 }
+		available_from_start = no
+	}
+	steamer_convoy = { 
+		cost = 65.00
+		color = { 76 18 0 }
+		available_from_start = no
+		overseas_penalty = yes
+	}
+	steel = { 
+		cost = 4.70
+		color = { 95 128 147 }
+		available_from_start = yes
+	}
+}
+
+### Consumer Goods ###
+consumer_goods = {
+## Built by Factories & Artisans ##
+	automobiles = {	
+		cost = 70.00 
+		color = { 61 67 64 }
+		available_from_start = no
+	}
+	furniture = {
+		cost = 4.90
+		color = { 173 129 40 }
+		available_from_start = yes
+	}
+	liquor = { 
+		cost = 4.40 #Vanilla is 6.4
+		color = { 76 5 0 }
+		available_from_start = yes
+	}
+	luxury_clothes = { 
+		cost = 65.00
+		color = { 234 227 40 }
+		available_from_start = yes
+	}
+	luxury_furniture = { 
+		cost = 59.00
+		color = { 255 140 184 }
+		available_from_start = yes
+	}
+	paper = { 
+		cost = 3.40
+		color = { 216 185 77 }
+		available_from_start = yes
+	}
+	radio = { 
+		cost = 16.00 
+		color = { 129 63 6 }
+		available_from_start = no
+	}
+	regular_clothes = { 
+		cost = 5.80
+		color = { 217 17 19 }
+		available_from_start = yes
+	}
+	telephones = { 
+		cost = 16.00
+		color = { 123 112 54 }
+		available_from_start = no
+	}
+	wine = {
+		cost = 9.70
+		color = { 123 0 54 }
+		available_from_start = no
+	}
+## Farm RGOs ##
+	cattle = { 
+		cost = 2.00
+		color = { 84 227 40 }
+		available_from_start = yes
+	}
+	coffee = { 
+		cost = 2.10
+		color = { 27 19 7 }
+		available_from_start = yes
+	}
+	fish = { 
+		cost = 1.50
+		color = { 128 98 73 }
+		available_from_start = yes
+	}
+	fruit = {
+		cost = 1.80
+		color = { 255 0 0 }
+		available_from_start = yes
+	}
+	grain = { 
+		cost = 2.20
+		color = { 219 157 36 }
+		available_from_start = yes
+	}
+	opium = { 
+		cost = 3.00
+		color = { 114 162 47 }
+		available_from_start = yes
+        money = yes
+		tradeable = no
+	}
+	# spices = {
+		# cost = 7.25
+		# color = { 244 196 48 }
+		# available_from_start = yes
+	# }
+	# sugar = {
+		# cost = 1.35
+		# color = { 241 244 255 }
+		# available_from_start = yes
+	# }
+	tea = {	
+		cost = 2.60
+		color = { 201 135 15 }
+		available_from_start = yes
+	}
+	tobacco = {	
+		cost = 1.10
+		color = { 100 69 30 }
+		available_from_start = yes
+	}
+}
+
+### Raw Materials ###
 raw_material_goods = {
+## Farm RGOs ##
 	cotton = { 
-		cost = 2.0
+		cost = 2.00
 		color = { 255 255 255 }
 	}
 	dye = {	
 		cost = 12.00
 		color = { 69 0 182 }
 	}
-	wool = { 
-		cost = 0.7
-		color = { 234 195 158 }
+	rubber = { 
+		cost = 7.00
+		color = { 123 110 86 }
 	}
 	silk = { 
-		cost = 10.0
+		cost = 10.00
 		color = { 125 158 43 }
 	}
-	coal = { 
-		cost = 2.3
-		color = { 11 29 77 }
-	}
-	sulphur = { 
-		cost = 6.0
-		color = { 181 228 102 }
-	}
-	iron = { 
-		cost = 3.5
-		color = { 111 111 111 }
-	}
 	timber = { 
-		cost = 0.9
+		cost = 0.90
 		color = { 146 72 17 }
 	}
 	tropical_wood = { 
-		cost = 5.4
+		cost = 5.40
 		color = { 213 177 118 }
 	}
-	rubber = { 
-		cost = 7.0
-		color = { 123 110 86 }
+	wool = { 
+		cost = 0.70
+		color = { 234 195 158 }
 	}
+## Mine RGOs ##
+	coal = { 
+		cost = 2.30
+		color = { 11 29 77 }
+	}
+	# furs = {
+		# cost = 12.50
+		# color = { 110 253 199 }
+	# }
+	iron = { 
+		cost = 3.50
+		color = { 111 111 111 }
+	}
+	# metal = {
+		# cost = 2.00
+		# color = { 253 199 110 }
+	# }
 	oil = { 
-		cost = 12.0
+		cost = 12.00
 		color = { 0 0 0 }
 	}
-	precious_metal = { 
-		cost = 8
-		tradeable = no
-		money = yes	
-		color = { 253 199 110 }
-	}
 	precious_goods = { 
-		cost = 7
-		tradeable = no
-		money = yes	
+		cost = 7.00
 		color = { 247 241 61 }
+		money = yes	
+		tradeable = no
+	}
+	precious_metal = { 
+		cost = 8.00
+		color = { 253 199 110 }
+		money = yes	
+		tradeable = no
+	}
+	sulphur = { 
+		cost = 6.00
+		color = { 181 228 102 }
 	}
 }
 
-industrial_goods = {
-	steel = { 
-		cost = 4.7
-		color = { 95 128 147 }
-		available_from_start = no
-	}
-	cement = { 
-		cost = 16.0
-		color = { 185 187 164 }
-	}
-	machine_parts = { 
-		cost = 36.5
-		color = { 177 198 196 }
-		available_from_start = no
-	}
-	glass = { 
-		cost = 2.9
-		color = { 201 200 199 }
-	}
-	fuel = { 
-		cost = 25.00 
-		available_from_start = no
-		color = { 145 110 89 }
-	}
-	fertilizer = { 
-		cost = 10.0
-		color = { 133 101 35 }
-	}
-	explosives = { 
-		cost = 20.00
-		color = { 192 68 20 }
-		available_from_start = no
-	}
-	clipper_convoy = { 
-		cost = 40.00 
-		overseas_penalty = yes
-		color = { 21 65 30 }
-	}
-	steamer_convoy = { 
-		cost = 65.00
-		available_from_start = no
-		overseas_penalty = yes
-		color = { 76 18 0 }
-	}
-	electric_gear = { 
-		cost = 16.00 
-		available_from_start = no
-		color = { 255 255 0 }
-	}
-	fabric = { 
-		cost = 1.8
-		color = { 186 50 40 }
-	}
-	lumber = { 
-		cost = 1.0
-		color = { 180 94 26 }
-	}
-}
-
-consumer_goods = {
-	paper = { 
-		cost = 3.4
-		color = { 216 185 77 }
-	}
-	cattle = { 
-		cost = 2.0
-		color = { 84 227 40 }
-	}
-	fish = { 
-		cost = 1.5
-		color = { 128 98 73 }
-	}
-	fruit = {
-		cost = 1.8
-		color = { 255 0 0 }
-	}
-	grain = { 
-		cost = 2.2
-		color = { 219 157 36 }
-	}
-	tobacco = {	
-		cost = 1.1
-		color = { 100 69 30 }
-	}
-	tea = {	
-		cost = 2.6
-		color = { 201 135 15 }
-	}
-	coffee = { 
-		cost = 2.1
-		color = { 27 19 7 }
-	}
-	opium = { 
-		cost = 3.2
-		color = { 114 162 47 }
-	}
-	automobiles = {	
-		cost = 70.00 
-		available_from_start = no
-		color = { 61 67 64 }
-	}
-	telephones = { 
-		cost = 16.00
-		available_from_start = no
-		color = { 123 112 54 }
-	}
-	wine = {
-		cost = 9.7
-		available_from_start = no
-		color = { 123 0 54 }
-	}
-	liquor = { 
-		cost = 4.4 #Vanilla is 6.4
-		color = { 76 5 0 }
-	}
-	regular_clothes = { 
-		cost = 5.8
-		color = { 217 17 19 }
-	}
-	luxury_clothes = { 
-		cost = 55.00
-		color = { 234 227 40 }
-	}
-	furniture = {
-		cost = 4.9
-		color = { 173 129 40 }
-	}
-	luxury_furniture = { 
-		cost = 59.00
-		color = { 255 140 184 }
-	}
-	radio = { 
-		cost = 16.00 
-		available_from_start = no
-		color = { 129 63 6 }
-	}
-}

@@ -10,7 +10,6 @@ mass_produced_clothing  = {
 		piston_steam_engine = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 0
 		modifier = {
@@ -41,7 +40,6 @@ seafood_packing = {
 		}
 	}
 	effect = {
-		activate_building = fish_cannery
 		rgo_goods_throughput = {
 			fish = 0.15
 		}
@@ -54,7 +52,6 @@ spinning_jenny = {
 		piston_steam_engine = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 5
 		modifier = {
@@ -116,7 +113,6 @@ alite = {
 		high_pressure_steam_engine = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 5
 	}
@@ -140,7 +136,13 @@ combine_harvesters = {
 		rgo_goods_throughput = {
 			grain = 0.2
 		}
-	}
+		# rgo_goods_throughput = {
+			# sugar = 0.1
+		# }
+		# rgo_goods_throughput = {
+			# spices = 0.1
+		# }
+	}	
 }
 
 # Logging #
@@ -179,7 +181,7 @@ rotherham_plough = {
 # Coal Powered Fishing Trawlers #
 coal_powered_fishing_trawlers = {
 	limit = {
-        compound_steam_engines = 1
+		compound_steam_engines = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -196,32 +198,10 @@ coal_powered_fishing_trawlers = {
 	}
 }
 
-# Combine Harvesters #
-combine_harvesters = {
-	limit = {
-        compound_steam_engines = 1
-		has_country_flag = existing_country
-	}
-	chance = {
-		base = 5
-	}
-	effect = {
-		rgo_goods_throughput = {
-			grain = 0.2
-		}
-		rgo_goods_throughput = {
-			sugar = 0.1
-		}
-		rgo_goods_throughput = {
-			spices = 0.1
-		}
-	}	
-}
-
 # Cotton Gin #
 cotton_gin = {
 	limit = {
-        compound_steam_engines = 1
+		compound_steam_engines = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -237,7 +217,7 @@ cotton_gin = {
 # Mechanised Plantations #
 mechanised_plantations = {
 	limit = {
-        compound_steam_engines = 1
+		compound_steam_engines = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -263,12 +243,12 @@ mechanised_plantations = {
 		rgo_goods_throughput = {
 			silk = 0.1
 		}
-		rgo_goods_throughput = {
-			spices = 0.1
-		}
-		rgo_goods_throughput = {
-			sugar = 0.1
-		}
+		# rgo_goods_throughput = {
+			# spices = 0.1
+		# }
+		# rgo_goods_throughput = {
+			# sugar = 0.1
+		# }
 		rgo_goods_throughput = {
 			tea = 0.1
 		}
@@ -281,7 +261,7 @@ mechanised_plantations = {
 # Mechanised Sawmills #
 mechanized_sawmills = {
 	limit = {
-        compound_steam_engines = 1
+		compound_steam_engines = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -313,7 +293,7 @@ mechanized_sawmills = {
 # Steam Shovel #
 steam_shovel = {
 	limit = {
-        compound_steam_engines = 1
+		compound_steam_engines = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -348,7 +328,7 @@ steam_shovel = {
 # Cattle Breeding Programs #
 cattle_breeding_program = {
 	limit = {
-        steam_turbine = 1
+		steam_turbine = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -364,7 +344,7 @@ cattle_breeding_program = {
 # Traction Engines #
 traction_engines = {
 	limit = {
-        steam_turbine = 1
+		steam_turbine = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -398,7 +378,7 @@ traction_engines = {
 # Turbine Driven Trawlers #
 turbine_driven_trawlers = {
 	limit = {
-        steam_turbine = 1
+		steam_turbine = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -422,7 +402,6 @@ cattle_trucks = {
 		combustion_engine = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 0
 		modifier = {
@@ -441,9 +420,6 @@ cattle_trucks = {
 	effect = {
 		rgo_goods_throughput = {
 			cattle = 0.1
-		}
-		factory_goods_throughput = {
-			horses = 0.10
 		}
 		rgo_goods_throughput = {
 			wool = 0.1
@@ -482,64 +458,32 @@ daimlers_automobile = {
 	}
 }
 
-# Mechanised Farming Equipment #
-mechanized_farming_equipment = {
-	limit = {
-		combustion_engine = 1
-		has_country_flag = existing_country
-	}
-	chance = {
-		base = 5
-		modifier = {
-			factor = 5
-			assembly_line = 1		
-		}
-	}
-	effect = {
-		rgo_goods_throughput = {
-			fruit = 0.1
-		}
-		rgo_goods_throughput = {
-			grain = 0.1
-		}
-		rgo_goods_throughput = {
-			opium = 0.1
-		}
-		rgo_goods_throughput = {
-			tea = 0.1
-		}
-		rgo_goods_throughput = {
-			tobacco = 0.1
-		}
-	}
-}
-
 # Rotary Kiln #
 rotary_kiln = {
 	limit = {
 		combustion_engine = 1
 		has_country_flag = existing_country
 	}
-    chance = {
-        base = 2
-        modifier = {
-            factor = 2
-            invention = stiff_plastic_brickmaking_machine
-        }
-        modifier = {
-            factor = 2
-            assembly_line = 1
-        }
-        modifier = {
-            factor = -6
-            NOT = { private_banks = 1 }
-        }
-        modifier = {
-            factor = -6
-            NOT = { advanced_metallurgy = 1 }
-        }
-    }
-    effect = {
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = stiff_plastic_brickmaking_machine
+		}
+		modifier = {
+			factor = 2
+			assembly_line = 1
+		}
+		modifier = {
+			factor = -6
+			NOT = { private_banks = 1 }
+		}
+		modifier = {
+			factor = -6
+			NOT = { advanced_metallurgy = 1 }
+		}
+	}
+	effect = {
 		factory_goods_output = {
 			cement = 0.15
 		}
@@ -649,7 +593,6 @@ candlestick_telephone = {
 		electrical_power_generation = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 1
 		modifier = {
@@ -674,7 +617,6 @@ carbon_transmitter = {
 		electrical_power_generation = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 1
 		modifier = {
@@ -745,7 +687,6 @@ crystal_radio = {
 		electrical_power_generation = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 1
 		modifier = {
@@ -959,9 +900,7 @@ moveable_type = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			print = 0.05
-		}
+
 	}
 }
 
@@ -999,7 +938,7 @@ newspapers = {
 		}
 	}
 	effect = {
-		activate_building = newspaper
+
 	}
 }
 
@@ -1075,16 +1014,16 @@ jacquard_power_loom = {
 			factor = 2
 			invention = insurance_companies
 		}
-        modifier = {
-            factor = -10
-            NOT = {
-                piston_steam_engine = 1
-                invention = mass_produced_clothing
-            }
+		modifier = {
+			factor = -10
+			NOT = {
+				piston_steam_engine = 1
+				invention = mass_produced_clothing
+			}
 		}
-    }
+	}
 	effect = {
-        activate_building = luxury_clothes_factory
+		activate_building = luxury_clothes_factory
 		factory_goods_output = {
 			fabric = 0.05 
 		}
@@ -1131,7 +1070,7 @@ mechanical_saw = {
 		base = 2
 		modifier = {
 			factor = 2
-            regenerative_furnaces = 1
+			regenerative_furnaces = 1
 		}
 		modifier = {
 			factor = 2
@@ -1162,7 +1101,7 @@ mechanized_slaughtering_block = {
 		}
 		modifier = {
 			factor = 2
-            regenerative_furnaces = 1
+			regenerative_furnaces = 1
 		}
 	}
 	effect = {
@@ -1186,9 +1125,7 @@ penny_press = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			print = 0.5
-		}
+
 	}
 }
 
@@ -1322,10 +1259,31 @@ silk_waste_spinning = {
 	}
 }
 
+## Semi-Automatization ##
+# Advanced Machinery Techniques #
+advanced_machining_techniques = {
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+		modifier = {
+			factor = -10 
+			civilized = no
+		}
+	}
+	effect = {
 
-# semi_automatization
+	}
+}
+
+# Dobby Loom #
 dobby_loom = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1338,13 +1296,21 @@ dobby_loom = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = { fabric = 0.1 }
-		#rgo_goods_output = { silk = 0.2 }
+		factory_goods_throughput = {
+			fabric = 0.1
+		}
+		rgo_goods_output = {
+			silk = 0.2
+		}
 	}
 }
 
+# Food-Packing System #
 food_packing_system = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1363,8 +1329,12 @@ food_packing_system = {
 	}
 }
 
+# Integral Distillery Process #
 integral_distillery_process = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1383,8 +1353,12 @@ integral_distillery_process = {
 	}
 }
 
+# Jigs #
 jiggs = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1406,13 +1380,21 @@ jiggs = {
 	}
 }
 
+# Lancashire Power Loom #
 lancashire_loom = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
-		base = 2
+		base = 0
 		modifier = {
 			factor = 2
 			invention = dobby_loom
+		}
+		modifier = {
+			factor = 2
+			invention = sharp_n_roberts_power_loom
 		}
 		modifier = {
 			factor = 2
@@ -1420,12 +1402,24 @@ lancashire_loom = {
 		}
 	}
 	effect = {
-		factory_goods_output = { fabric = 0.05 }
+		rgo_goods_output = {
+			cotton = 0.1
+		}
+		rgo_goods_output = {
+			silk = 0.1
+		}
+		factory_goods_output = {
+			fabric = 0.05
+		}
 	}
 }
 
+# Machine Tools #
 machine_tools = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1442,11 +1436,16 @@ machine_tools = {
 			machine_parts = 0.05
 		}
 		factory_throughput = 0.05
+		mine_RGO_eff = 0.5
 	}
 }
 
+# Steam-Powered Silk Reels #
 steam_powered_silk_reels = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1459,12 +1458,18 @@ steam_powered_silk_reels = {
 		}
 	}
 	effect = {
-		rgo_goods_output = { silk = 0.2 }
+		rgo_goods_output = {
+			silk = 0.2
+		}
 	}
 }
 
+# Whitney & Colt’s Standardized Small Arms #
 whitney_n_colts_standardized_small_arms = {
-	limit = { semi_automatization = 1 }
+	limit = {
+		semi_automatization = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1483,9 +1488,13 @@ whitney_n_colts_standardized_small_arms = {
 	}
 }
 
-# pneumatic_and_hydraulics
+## Pneumatics & Hydraulics ##
+# Drying Techniques #
 drying_techniques = {
-	limit = { pneumatic_and_hydraulics = 1 }
+	limit = {
+		pneumatic_and_hydraulics = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1499,19 +1508,23 @@ drying_techniques = {
 	}
 	effect = {
 		rgo_goods_output = {
-			tea = 0.2
-		}
-		rgo_goods_output = {
 			coffee = 0.3
 		}
 		rgo_goods_output = {
 			opium = 0.2
 		}
+		rgo_goods_output = {
+			tea = 0.2
+		}
 	}
 }
 
+# Electric Machinery #
 electric_machinery = {
-	limit = { pneumatic_and_hydraulics = 1 }
+	limit = {
+		pneumatic_and_hydraulics = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1525,17 +1538,49 @@ electric_machinery = {
 	}
 	effect = {
 		factory_cost = 0.05
-		rgo_goods_output = {
-			timber = 0.15
-		}
 		factory_goods_output = {
 			machine_parts = 0.02
+		}
+		rgo_goods_output = {
+			timber = 0.15
 		}
 	}
 }
 
+# Machine-Made Steel Cans #
+machine_made_steel_cans = {
+	limit = {
+		pneumatic_and_hydraulics = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = pre_planned_depot_systems
+		}
+		modifier = {
+			factor = 2
+			invention = industrial_rnd_investments
+		}
+		modifier = {
+			factor = 4
+			war = yes
+		}
+	}
+	effect = {
+		factory_goods_throughput = {
+			canned_food = 0.05 
+		}
+	}
+}
+
+# Oil-Pumping Machinery #
 oil_pumping_machinery = {
-	limit = { pneumatic_and_hydraulics = 1 }
+	limit = {
+		pneumatic_and_hydraulics = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1544,7 +1589,7 @@ oil_pumping_machinery = {
 		}
 		modifier = {
 			factor = 2
-            drilling_and_blasting = 1
+			drilling_and_blasting = 1
 		}
 	}
 	effect = {
@@ -1554,11 +1599,12 @@ oil_pumping_machinery = {
 	}
 }
 
+# Stiff-Plastic Brickmaking Machine #
 stiff_plastic_brickmaking_machine = {
 	limit = {
-		#steam_turbine = 1
 		pneumatic_and_hydraulics = 1
-		}
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1573,14 +1619,25 @@ stiff_plastic_brickmaking_machine = {
 			factor = -6
 			NOT = { private_banks = 1 }
 		}
+		modifier = {
+			factor = -6
+			NOT = { steam_turbine = 1 }
+		}
 	}
-	effect = { factory_goods_output = { cement = 0.05 } }
+	effect = {
+		factory_goods_output = {
+			cement = 0.05
+		}
+	}
 }
 
-# assembly_line
+## Assembly Line ##
+# Advanced Drilling Techniques #
 advanced_drilling_techniques = {
-	limit = { assembly_line = 1 }
-	news = no
+	limit = {
+		assembly_line = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 	}
@@ -1591,8 +1648,12 @@ advanced_drilling_techniques = {
 	}
 }
 
+# Fordism #
 fordism = {
-	limit = { assembly_line = 1 }
+	limit = {
+		assembly_line = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1606,16 +1667,20 @@ fordism = {
 	}
 	effect = {
 		factory_goods_output = {
-			automobiles = 0.03
+			aeroplanes = 0.03
 		}
 		factory_goods_output = {
-			aeroplanes = 0.03
+			automobiles = 0.03
 		}
 	}
 }
 
+# Industrialised Armament Industry #
 industrialized_armament_industry = {
-	limit = { assembly_line = 1 }
+	limit = {
+		assembly_line = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1629,9 +1694,6 @@ industrialized_armament_industry = {
 	}
 	effect = {
 		factory_goods_output = {
-			small_arms = 0.03
-		}
-		factory_goods_output = {
 			ammunition = 0.03
 		}
 		factory_goods_output = {
@@ -1640,37 +1702,64 @@ industrialized_armament_industry = {
 		factory_goods_output = {
 			explosives = 0.03
 		}
+		factory_goods_output = {
+			small_arms = 0.03
+		}
 	}
 }
 
-mechanized_farming_equipment = {
+# Mass-Produced Rail #
+massproduced_rail = {
 	limit = { assembly_line = 1 }
-	news = no
+	chance = {
+		base = 3
+		modifier = {
+			factor = 2
+			drilling_and_blasting = 1
+		}
+		modifier = {
+			factor = 2
+			steel_railroad = 1
+		}
+		modifier = {
+			factor = 2
+			invention = fordism
+		}
+	}
+	effect = {
+	}
+}
+# Mechanised Farming Equipment #
+mechanized_farming_equipment = {
+	limit = {
+		assembly_line = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 	}
 	effect = {
 		rgo_goods_throughput = {
-			grain = 0.2
-		}
-		rgo_goods_throughput = {
 			fruit = 0.2
 		}
 		rgo_goods_throughput = {
-			tea = 0.2
+			grain = 0.2
 		}
 		rgo_goods_throughput = {
 			opium = 0.2
 		}
 		# rgo_goods_throughput = {
+			# spices = 0.2
+		# }
+		# rgo_goods_throughput = {
 			# sugar = 0.2
 		# }
 		rgo_goods_throughput = {
+			tea = 0.2
+		}
+		rgo_goods_throughput = {
 			tobacco = 0.2
 		}
-		# rgo_goods_throughput = {
-			# spices = 0.2
-		# }
 	}
 }
 
@@ -1715,8 +1804,12 @@ northrop_power_loom = {
 	}
 }
 
+# Refrigerator Technology #
 refrigerator_technology = {
-	limit = { assembly_line = 1 }
+	limit = {
+		assembly_line = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1733,10 +1826,10 @@ refrigerator_technology = {
 			cattle = 0.2
 		}
 		rgo_goods_output = {
-			fruit = 0.2
+			fish = 0.2
 		}
 		rgo_goods_output = {
-			fish = 0.2
+			fruit = 0.2
 		}
 		factory_goods_output = {
 			liquor = 0.02
@@ -1746,27 +1839,98 @@ refrigerator_technology = {
 		}
 	}
 }
-# shift_work
+
+## Shift Work ##
+# Double Seams #
+double_seams = {
+	limit = {
+		shift_work = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = electric_rolling_techniques
+		}
+		modifier = {
+			factor = 2
+			invention = i_scientific_management
+		}
+		modifier = {
+			factor = 4
+			war = yes
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			canned_food = 0.04
+		}
+	}
+}
+
+# Industrial Farming #
 industrial_farming = {
-	limit = { shift_work = 1 }
-	news = no
+	limit = {
+		shift_work = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 	}
 	effect = {
 		rgo_goods_throughput = {
-			grain = 0.2
-
+			coffee = 0.1			
+		}
+		rgo_goods_throughput = {
+			cotton = 0.1
 		}
 		rgo_goods_throughput = {
 			fruit = 0.2
 		}
+		rgo_goods_throughput = {
+			grain = 0.2
+		}
+		rgo_goods_throughput = {
+			opium = 0.1
+		}
+		rgo_goods_throughput = {
+			silk = 0.1
+		}
+		rgo_goods_throughput = {
+			tea = 0.1	
+		}
+		rgo_goods_throughput = {
+			tobacco = 0.1
+		}
 	}
 }
 
+# Industrial Livestock Husbandry #
+industrial_livestock_husbandry = {
+	limit = {
+		shift_work = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+	}
+	effect = {
+		rgo_goods_output = {
+			cattle = 0.1	
+		}
+		rgo_goods_output = {
+			wool = 0.1	
+		}
+	}
+}
+
+# Mechanised Oil Wells #
 mechanized_wells = {
-	limit = { shift_work = 1 }
-	news = no
+	limit = {
+		shift_work = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 	}
@@ -1777,10 +1941,14 @@ mechanized_wells = {
 	}
 }
 
-## metallurgy
-# hot_blast
+### Metallurgy ###
+## Hot Blast Process ##
+# Ammunition Production #
 ammunition_production = {
-    limit = { hot_blast = 1 }
+	limit = {
+		hot_blast = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1797,9 +1965,12 @@ ammunition_production = {
 	}
 }
 
+# Artillery Production #
 artillery_production = {
-    limit = { hot_blast = 1 }
-	#limit = { iron_muzzle_loaded_artillery = 1 }
+	limit = {
+		hot_blast = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1812,7 +1983,7 @@ artillery_production = {
 		}
 		modifier = {
 			factor = -10 
-			civilized = no
+			NOT = { bronze_muzzle_loaded_artillery = 1 }
 		}
 	}
 	effect = {
@@ -1820,8 +1991,12 @@ artillery_production = {
 	}
 }
 
+# Explosives Production #
 explosives_production = {
-    limit = { hot_blast = 1 }
+	limit = {
+		hot_blast = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1838,22 +2013,12 @@ explosives_production = {
 	}
 }
 
-nitrate_extraction_process = {
-	limit = { hot_blast = 1 }
-	news = no
-	chance = {
-		base = 5
-	}
-	effect = {
-		rgo_goods_throughput = {
-			sulphur = 0.1
-		}
-	}
-}
-
+# Small Arms Production #
 small_arms_production = {
-    limit = { hot_blast = 1 }
-	#limit = { breech_loaded_rifles = 1 }
+	limit = {
+		hot_blast = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2 #5
 		modifier = {
@@ -1865,8 +2030,12 @@ small_arms_production = {
 			early_railroad = 1
 		}
 		modifier = {
+			factor = 4
+			breech_loaded_rifles = 1
+		}
+		modifier = {
 			factor = -10 
-			civilized = no
+			NOT = { flintlock_rifles = 1 }
 		}
 	}
 	effect = {
@@ -1874,9 +2043,12 @@ small_arms_production = {
 	}
 }
 
+# Steelworks #
 steelworks  = {
-	limit = { hot_blast = 1 }
-	news = no
+	limit = {
+		hot_blast = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
@@ -1889,9 +2061,13 @@ steelworks  = {
 	}
 }
 
-# mechanized_mining
+## Mechanised Mining ##
+# Coke #
 coke = {
-	limit = { mechanized_mining = 1 }
+	limit = {
+		mechanized_mining = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1902,53 +2078,53 @@ coke = {
 			factor = 2
 			early_railroad = 1
 		}
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
 	effect = {
 		rgo_goods_output = {
 			coal = 1.5
@@ -1956,70 +2132,110 @@ coke = {
 	}
 }
 
-pattinson_process = {
-    limit = {
-        mechanized_mining = 1
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-
-    effect = {
-        rgo_goods_output = { iron = 0.1 }
-        rgo_goods_output = { precious_metal = 0.1 }
-        rgo_goods_output = { sulphur = 0.1 }
-    }
+# Copper Pits #
+copper_pits = {
+	limit = {
+		mechanized_mining = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+	}
+	effect = {
+		# rgo_goods_throughput = {
+			# metal = 0.25
+		# }
+	}
 }
 
+# Nitrate Extraction Process #
+nitrate_extraction_process = {
+	limit = {
+		mechanized_mining = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+	}
+	effect = {
+		rgo_goods_throughput = {
+			sulphur = 0.1
+		}
+		rgo_size = {
+			sulphur = 0.2
+		}
+	}
+}
+
+# Pattinson’s Process #
+pattinson_process = {
+	limit = {
+		mechanized_mining = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+
+	effect = {
+		rgo_goods_output = { iron = 0.1 }
+		rgo_goods_output = { precious_metal = 0.1 }
+		rgo_goods_output = { sulphur = 0.1 }
+	}
+}
+
+# Pit-Mined Coal #
 pit_coal = {
-	limit = { mechanized_mining = 1 }
+	limit = {
+		mechanized_mining = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2030,53 +2246,53 @@ pit_coal = {
 			factor = 2
 			early_railroad = 1
 		}
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
 	effect = {
 		rgo_goods_output = {
 			coal = 0.8
@@ -2084,9 +2300,29 @@ pit_coal = {
 	}
 }
 
-# regenerative_furnaces
+# Zinc Alloys #
+zinc_alloys = {
+	limit = {
+		mechanized_mining = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+	}
+	# effect = {
+		# rgo_goods_output = {
+			# metal = 0.03
+		# }
+	# }
+}
+
+## Regenerative Furnaces ##
+# Advanced Ore-Grinding Processes #
 advanced_ore_grinding_processes = {
-    limit = { regenerative_furnaces = 1 }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2097,52 +2333,52 @@ advanced_ore_grinding_processes = {
 			factor = 2
 			organized_factories = 1
 		}
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
 	}
 	effect = {
 		rgo_goods_output = {
@@ -2151,8 +2387,12 @@ advanced_ore_grinding_processes = {
 	}
 }
 
+# Advanced Ore-Roasting Processes #
 advanced_ore_roasting_processes = {
-	limit = { regenerative_furnaces = 1 }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2163,52 +2403,52 @@ advanced_ore_roasting_processes = {
 			factor = 2
 			inorganic_chemistry = 1
 		}
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
 	}
 	effect = {
 		rgo_goods_output = {
@@ -2217,8 +2457,12 @@ advanced_ore_roasting_processes = {
 	}
 }
 
+# Advanced Ore-Smelting Processes #
 advanced_ore_smelting_processes = {
-    limit = { regenerative_furnaces = 1 }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2229,52 +2473,52 @@ advanced_ore_smelting_processes = {
 			factor = 2
 			iron_railroad = 1
 		}
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
 	}
 	effect = {
 		rgo_goods_output = {
@@ -2283,11 +2527,13 @@ advanced_ore_smelting_processes = {
 	}
 }
 
+# Bessemer Steel #
 bessemer_steel = {
-    limit = {
-        regenerative_furnaces = 1
-        year = 1860
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+		year = 1860
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2309,134 +2555,162 @@ bessemer_steel = {
 	}
 }
 
+# Brass #
+brass = {
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+	}
+	effect = {
+
+	}
+}
+
+# Dynamite #
 dynamite = {
-    limit = {
-        regenerative_furnaces = 1
-        year = 1860
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.25 }
-        rgo_size = { coal = 0.25 }
-        rgo_size = { iron = 0.25 }
-        rgo_size = { sulphur = 0.25 }
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+		year = 1860
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.25
+		}
+		rgo_size = {
+			coal = 0.25
+		}
+		rgo_size = {
+			iron = 0.25
+		}
+		rgo_size = {
+			sulphur = 0.25
+		}
+	}
 }
 
+# Electrolytic Refining #
 electrolytic_refining = {
-    limit = {
-        regenerative_furnaces = 1
-        year = 1870
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { iron = 0.3 }
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+		year = 1870
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			iron = 0.3
+		}
+	}
 }
 
+# Martin Steel #
 martin_steel = {
-    limit = {
-        regenerative_furnaces = 1
-        year = 1870
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+		year = 1870
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2455,132 +2729,144 @@ martin_steel = {
 	}
 }
 
+# Parkes Process #
 parkes_process = {
-    limit = {
-        regenerative_furnaces = 1
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { iron = 0.1 }
-        rgo_goods_output = { precious_metal = 0.1 }
-        rgo_goods_output = { sulphur = 0.1 }
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			iron = 0.1
+		}
+		rgo_goods_output = {
+			precious_metal = 0.1
+		}
+		rgo_goods_output = {
+			sulphur = 0.1
+		}
+	}
 }
 
+# Square-Set Timbering #
 square_set_timbering = {
-    limit = {
-        regenerative_furnaces = 1
-        year = 1860
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.2 }
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+		year = 1860
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.2
+		}
+	}
 }
 
+# Thomas Steel #
 thomas_steel = {
-    limit = {
-        regenerative_furnaces = 1
-        year = 1880
-    }
+	limit = {
+		regenerative_furnaces = 1
+		has_country_flag = existing_country
+		year = 1880
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2599,376 +2885,502 @@ thomas_steel = {
 	}
 }
 
-# drilling_and_blasting
+## Drilling & Blasting ##
+# Bituminous Coal for Coking #
+bituminous_coal_for_coking = {
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+	}
+
+	effect = {
+		rgo_goods_throughput = {
+			coal = 0.1
+		}
+	}	
+}
+
+# Cordite #
+cordite = {
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+	}
+	effect = {
+		factory_goods_output = {
+			ammunition = 0.03
+		}
+		factory_goods_output = {
+			explosives = 0.03
+		}
+	}
+}
+
+# Cyanide Milling #
 cyanide_milling = {
-    limit = {
-        drilling_and_blasting = 1
-        year = 1885
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { iron = 0.1 }
-        rgo_goods_output = { precious_metal = 0.2 }
-    }
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+		year = 1885
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			iron = 0.1
+		}
+		rgo_goods_output = {
+			precious_metal = 0.2
+		}
+	}
 }
 
+# Deep Coal Mining #
 deep_mining = {
-    limit = {
-        drilling_and_blasting = 1
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.25 }
-    }
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.25
+		}
+	}
 }
 
+# Friction Hoist #
 friction_hoist = {
-    limit = {
-        drilling_and_blasting = 1
-        year = 1875
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.1 }
-    }
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+		year = 1875
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.1
+		}
+	}
 }
 
+# Lixiviation Milling #
 lixiviation_mills = {
-    limit = {
-        drilling_and_blasting = 1
-        year = 1880
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { iron = 0.3 }
-    }
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+		year = 1880
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			iron = 0.3
+		}
+	}
 }
 
+# Pneumatic Drill #
 percussion_drill = {
-    limit = {
-        drilling_and_blasting = 1
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -10
-            NOT = { pneumatic_and_hydraulics = 1 }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.25 }
-    }
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -10
+			NOT = { pneumatic_and_hydraulics = 1 }
+		}
+	}
+	effect = {
+ 		factory_cost = -0.01
+		rgo_goods_output = {
+			coal = 0.25
+		}
+		rgo_goods_throughput = {
+			iron = 0.1
+		}
+		rgo_goods_throughput = {
+			sulphur = 0.1
+		}
+		rgo_goods_throughput = {
+			precious_metal = 0.1
+		}
+   }
 }
 
+# TNT #
 trinitrotoluene = {
-    limit = {
-        drilling_and_blasting = 1
-        year = 1895
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.25 }
-        rgo_size = { coal = 0.25 }
-        rgo_size = { iron = 0.25 }
-        rgo_size = { sulphur = 0.25 }
-    }
+	limit = {
+		drilling_and_blasting = 1
+		has_country_flag = existing_country
+		year = 1895
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.25
+		}
+		rgo_size = {
+			coal = 0.25
+		}
+		rgo_size = {
+			iron = 0.25
+		}
+		rgo_size = {
+			sulphur = 0.25
+		}
+	}
 }
 
-# advanced_metallurgy
+## Open-Hearth Furnace ##
+# Deep Shaft Mining #
+deep_shaft_mining = {
+	limit = {
+		advanced_metallurgy = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 5
+			invention = lighting 
+		}
+		modifier = {
+			factor = 3
+			invention = electrical_lighting 
+		}
+		modifier = {
+			factor = 2
+			steel_railroad = 1 
+		}
+		modifier = {
+			factor = 5
+			combustion_engine = 1 
+		}
+	}
+	effect = {
+		rgo_goods_throughput = {
+			iron = 0.15
+		} 
+		rgo_goods_throughput = {
+			precious_metal = 0.1
+		} 
+		rgo_goods_throughput = {
+			sulphur = 0.15
+		}
+		rgo_size = {
+			coal = 0.1
+		}
+		rgo_size = {
+			iron = 0.1
+		}
+		rgo_size = {
+			precious_metal = 0.1
+		}
+		rgo_size = {
+			sulphur = 0.1
+		}
+	}	
+}
+
+# Electric Rolling Techniques #
 electric_rolling_techniques = {
-	limit = { advanced_metallurgy = 1 }
+	limit = {
+		advanced_metallurgy = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -2982,13 +3394,50 @@ electric_rolling_techniques = {
 	}
 	effect = {
 		factory_goods_output = {
-			steel = 0.02
+			steel = 0.04
 		}
 	}
 }
 
+# Motor Housing Insulation #
+motor_housing_insulation = {
+	limit = {
+		advanced_metallurgy = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 5
+			electricity = 1
+		}
+		modifier = {
+			factor = 5
+			invention = electric_machinery
+		}
+	}
+	effect = {
+		rgo_goods_throughput = {
+			coal = 0.1
+		} 
+		rgo_goods_throughput = {
+			iron = 0.1
+		} 
+		rgo_goods_throughput = {
+			precious_metal = 0.1
+		} 
+		rgo_goods_throughput = {
+			sulphur = 0.1
+		} 
+	}
+}
+
+# Steel Alloys #
 steel_alloys = {
-	limit = { advanced_metallurgy = 1 }
+	limit = {
+		advanced_metallurgy = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3001,194 +3450,344 @@ steel_alloys = {
 		}
 	}
 	effect = {
-		rgo_goods_output = { precious_metal = 0.05 }
-		factory_goods_output = { steel = 0.02 }
+		factory_goods_output = {
+			steel = 0.02
+		}
+		rgo_goods_output = {
+			precious_metal = 0.05
+		}
 	}
 }
 
-# electric_furnace
+## Electric Arc Furnace ##
+# Fluid Catalytic Cracking #
+fluid_catalytic_cracking = {
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 5
+			combustion_engine = 1
+		}
+		modifier = {
+			factor = 5
+			invention = fractional_distillation
+		}
+		modifier = {
+			factor = -9
+			NOT = { year = 1910 }
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			fuel = 0.025
+		}
+	}	
+}
+
+# Froth Flotation #
 froth_flotation = {
-    limit = {
-        electric_furnace = 1
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { iron = 0.3 }
-        rgo_goods_output = { sulphur = 0.3 }
-    }
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			iron = 0.3
+		}
+		rgo_goods_output = {
+			sulphur = 0.3
+		}
+	}
 }
 
+# Hydraulic Excavators #
 hydraulic_excavator = {
-    limit = {
-        electric_furnace = 1
-        year = 1920
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = iron
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = iron
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { iron = 0.5 }
-        rgo_goods_output = { coal = 0.5 }
-    }
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+		year = 1920
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = iron
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = iron
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.5
+		}
+		rgo_goods_output = {
+			iron = 0.5
+		}
+	}
 }
 
+# Lombard and Holt’s Continuous Track #
+lombard_and_holts_continuous_track = {
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 10
+			war = yes
+		}
+		modifier = {
+			factor = 10
+			invention = steel_alloys
+		}
+	}
+	effect = {
+		shared_prestige = 50
+		factory_goods_throughput = {
+			barrels = 0.03 
+		}
+		rgo_goods_throughput = {
+			timber = 0.1
+		}
+	}	
+}
+
+# Mine Cutting Machines #
+mine_cutting_machines = {
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = -10
+				NOT = { electricity = 1 }
+		}
+		modifier = {
+			factor = 3
+			invention = electric_machinery
+		}
+		modifier = {
+			factor = 5
+			invention = direct_current
+		}
+		modifier = {
+			factor = 5
+			invention = alternating_current
+		}
+	}
+	effect = {
+		rgo_goods_throughput = {
+			coal = 0.1
+		}
+		rgo_goods_throughput = {
+			iron = 0.1
+		} 
+	}
+}
+
+# Modern Mine Hoists #
+modern_mine_hoists = {
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = -10
+				NOT = { electricity = 1 }
+		}
+		modifier = {
+			factor = 3
+			invention = electric_machinery
+		}
+		modifier = {
+			factor = 5
+			invention = direct_current
+		}
+		modifier = {
+			factor = 5
+			invention = alternating_current
+		}
+	}
+	effect = {
+		rgo_goods_throughput = {
+			coal = 0.1
+		}
+		rgo_goods_throughput = {
+			iron = 0.1
+		} 
+		rgo_goods_throughput = {
+			precious_metal = 0.1
+		}
+	}
+}
+
+# Shrinking Stoping #
 shrinkage_stoping = {
-    limit = {
-        electric_furnace = 1
-    }
-    #news = no
-    chance = {
-        base = 6
-        modifier = {
-            factor = -10
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.05 type = labourers }
-                province_control_days = 1825
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.01 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -2
-            any_owned_province = {
-                controlled_by = THIS
-                trade_goods = coal
-                unemployment_by_type = { value = 0.03 type = labourers }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_neighbor_country = {
-                is_greater_power = no
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-        modifier = {
-            factor = -1
-            any_greater_power = {
-                any_owned_province = {
-                    trade_goods = coal
-                    unemployment_by_type = { value = 0.01 type = labourers }
-                    province_control_days = 365
-                }
-            }
-        }
-    }
-    effect = {
-        rgo_goods_output = { coal = 0.4 }
-    }
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.05 type = labourers }
+				province_control_days = 1825
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -2
+			any_owned_province = {
+				controlled_by = THIS
+				trade_goods = coal
+				unemployment_by_type = { value = 0.03 type = labourers }
+			}
+		}
+		modifier = {
+			factor = -1
+			any_neighbor_country = {
+				is_greater_power = no
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			any_greater_power = {
+				any_owned_province = {
+					trade_goods = coal
+					unemployment_by_type = { value = 0.01 type = labourers }
+					province_control_days = 365
+				}
+			}
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			coal = 0.4
+		}
+	}
 }
 
+# Stainless Steel #
 stainless_steel = {
-	limit = { electric_furnace = 1 }
+	limit = {
+		electric_furnace = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3207,17 +3806,19 @@ stainless_steel = {
 	}
 }
 
-## tech_infrastructure
-# experimental_railroad
+### Infrastructure ###
+## Experimental Railroad ##
+# First Railroads #
 first_railroads = {
-	limit = { experimental_railroad = 1 }
-	news = no
+	limit = {
+		experimental_railroad = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
 			factor = 3
-#			high_pressure_steam_engine = 1
-			piston_steam_engine = 1
+			high_pressure_steam_engine = 1
 		}
 	}
 	effect = {
@@ -3225,10 +3826,13 @@ first_railroads = {
 	}
 }
 
-# early_railroad
+## Early Railroad ##
+# Industrial Railroads #
 industrial_railroads = {
-	limit = { early_railroad = 1 }
-	news = no
+	limit = {
+		early_railroad = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
@@ -3245,10 +3849,13 @@ industrial_railroads = {
 	}
 }
 
-# iron_railroad
+## Iron Railroad ##
+# The Iron Horse #
 the_iron_horse = {
-	limit = { iron_railroad = 1 }
-	news = no
+	limit = {
+		iron_railroad = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
@@ -3265,10 +3872,13 @@ the_iron_horse = {
 	}
 }
 
-# steel_railroad
+## Steel Railroad ##
+# Commercial Railroads #
 commercial_railroads = {
-	limit = { steel_railroad = 1 }
-	news = no
+	limit = {
+		steel_railroad = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
@@ -3285,10 +3895,39 @@ commercial_railroads = {
 	}
 }
 
-# integral_rail_system
+# Railroad Mobilisation Timetables #
+railroad_mobilisation_timetables = {
+	limit = {
+		steel_railroad = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 3
+			invention = mobilization_time_tables
+		}
+		modifier = {
+			factor = 5
+			invention = distribution_channels
+		}
+		modifier = {
+			factor = 5
+			invention = pre_planned_depot_systems
+		}
+	}
+	effect = {
+		mobilisation_size = 0.02		
+	}	
+}
+
+## Integral Rail System ##
+# Arteries of Commerce #
 arteries_of_commerce = {
-	limit = { integral_rail_system = 1 }
-	news = no
+	limit = {
+		integral_rail_system = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
@@ -3305,10 +3944,38 @@ arteries_of_commerce = {
 	}
 }
 
-# limited_access_roads
+# Improved Railroad Mobilisation Timetables #
+improved_railroad_mobilisation_timetables = {
+	limit = {
+		integral_rail_system = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 3
+			invention = railroad_mobilisation_timetables
+		}
+		modifier = {
+			factor = 5
+			invention = army_military_political_decision_making
+		}
+		modifier = {
+			factor = 5
+			invention = industrialized_armament_industry
+		}
+	}
+	effect = {
+		mobilisation_size = 0.01		
+	}	
+}
+## Limited-Access Roads ##
+# Autobahn #
 autobahn = {
-	limit = { limited_access_roads = 1 }
-	news = no
+	limit = {
+		limited_access_roads = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 		modifier = {
@@ -3321,15 +3988,92 @@ autobahn = {
 	}
 }
 
-## chemistry_and_electricity
-# basic_chemistry
+# Total War Mobilisation #
+total_war_mobilisation = {
+	limit = { 
+		limited_access_roads = 1
+		has_country_flag = existing_country
+		NOT = { invention = non_interventionism }
+		NOT = { 
+			OR = {
+				primary_culture = beifaren
+				primary_culture = han_chinese
+				primary_culture = hanhui
+				primary_culture = hakka
+				primary_culture = manchu
+				primary_culture = miao
+				primary_culture = min
+				primary_culture = nanfaren
+				primary_culture = yi
+				primary_culture = yue
+			} 
+		} 
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 50
+			war = yes
+		}
+		modifier = {
+			factor = 10
+			invention = national_radio_networks
+		}
+		modifier = {
+			factor = 10
+			shift_work = 1
+		}
+		modifier = {
+			factor = 20
+			war_policy = jingoism
+		}
+		modifier = {
+			factor = 10
+			war_policy = pro_military
+		}
+		modifier = {
+			factor = -25
+			war_policy = anti_military
+		}
+		modifier = {
+			factor = -75
+			war_policy = pacifism
+		}
+		modifier = {
+			factor = -100
+			NOT = { great_war_experience = 1 }
+		}
+		modifier = {
+			factor = -100
+			NOT = { government_interventionism = 1 }
+		}
+	}
+	effect = {
+		army_base = {
+			supply_consumption = 0.3
+		}
+		mobilisation_economy_impact = -0.2		
+		mobilisation_size = 0.03
+		navy_base = {
+			supply_consumption = 0.1
+		}
+	}	
+}
+
+### Chemistry & Electricity ###
+## Basic Chemistry ##
+# Fertiliser Plants #
 fertilizer_plants  = {
 	limit = {
 		basic_chemistry = 1
+		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
-		base = 5
+		base = 0
+		modifier = {
+			factor = 5
+			piston_steam_engine = 1
+		}
 		modifier = {
 			factor = -10
 			civilized = no
@@ -3340,9 +4084,35 @@ fertilizer_plants  = {
 	}
 }
 
-# medicine
+# Mercerisation #
+mercerization = {
+	limit = {
+		basic_chemistry = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+	}
+	effect = {
+		factory_goods_throughput = {
+			fabric = 0.025
+		}
+		rgo_goods_output = {
+			cotton = 0.05
+		}
+		rgo_goods_output = {
+			dye = 0.05
+		}
+	}
+}
+
+## Medicine ##
+# Aerial Bacteria and the Antiseptic Principle #
 aerial_bacteria_and_antiseptic_principle = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3355,44 +4125,49 @@ aerial_bacteria_and_antiseptic_principle = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0001
 		land_attrition = -0.05
+		pop_growth = 0.0002
 		soldier_to_pop_loss = 0.01
 	}
 }
 
+# Anaesthesia #
 anaesthesia = {
 	limit = {
 		medicine = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 0
-		# base = 2
 		modifier = {
-			# factor = 4
 			factor = 5
 			organic_chemistry = 1
 		}
 	}
 	effect = {
-		soldier_to_pop_loss = 0.01
 		pop_growth = 0.0001
+		soldier_to_pop_loss = 0.01
 		shared_prestige = 5
 	}
 }
 
+# Antitoxins #
 antitoxins = {
 	limit = {
 		medicine = 1
-		# electricity = 1
-		synthetic_polymers = 1
 		has_country_flag = existing_country
+		#electricity = 1
+		#analytic_philosophy = 1
+		#synthetic_polymers = 1
+		#the_historical_theory = 1
+		#military_logistics = 1
 	}
-	news = no
 	chance = {
 		base = 2
+		modifier = {
+			factor = 2
+			electricity = 1
+		}
 		modifier = {
 			factor = -60
 			NOT = { year = 1890 }
@@ -3406,6 +4181,12 @@ antitoxins = {
 			organic_chemistry = 1
 		}
 		modifier = {
+			factor = 4
+			any_neighbor_country = {
+				invention = antitoxins
+			}
+		}
+		modifier = {
 			factor = -2
 			invention = vitamins
 		}
@@ -3416,8 +4197,12 @@ antitoxins = {
 	}
 }
 
+# Chemotherapy #
 chemotherapy = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3434,8 +4219,12 @@ chemotherapy = {
 	}
 }
 
+# Clinical Thermometers & Binaural Stethoscopes #
 clinical_thermometers_and_binaural_stethoscopes = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3448,12 +4237,16 @@ clinical_thermometers_and_binaural_stethoscopes = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0001
+		pop_growth = 0.0002
 	}
 }
 
+# Combat Medicine #
 combat_medicine = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3471,8 +4264,43 @@ combat_medicine = {
 	}
 }
 
+# Florence Nightingale #
+florence_nightingale = {
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+		has_global_flag = crimea_has_happened
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 8
+			war = yes
+		}
+		modifier = {
+			factor = 5
+			invention = sanitation
+		}
+		modifier = {
+			factor = 5
+			invention = combat_medicine
+		}
+		modifier = {
+			factor = 5
+			nationalism_n_imperialism = 1
+		}
+	}
+	effect = {
+		soldier_to_pop_loss = 0.01
+	}
+}
+
+# Genetics: Heredity #
 genetics_heredity = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3485,26 +4313,34 @@ genetics_heredity = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0001
+		pop_growth = 0.0002
 	}
 }
 
-florence_nightingale = {
+# Pharmaceuticals #
+pharmaceuticals = {
 	limit = {
 		medicine = 1
-		has_global_flag = crimea_has_happened
+		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
-		base = 2
+		base = 6
+		modifier = {
+			factor = -10 
+			civilized = no
+		}
 	}
 	effect = {
-		soldier_to_pop_loss = 0.01
+
 	}
 }
 
+# Pressure Chambers for Thorax Surgery #
 pressure_chambers_for_thorax_surgery = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3513,17 +4349,20 @@ pressure_chambers_for_thorax_surgery = {
 		}
 		modifier = {
 			factor = 2
-            hot_blast = 1
+			regenerative_furnaces = 1
 		}
 	}
 	effect = {
-		# shared_prestige = 5
 		shared_prestige = 10
 	}
 }
 
+# Prophylaxis Against Malaria #
 prophylaxis_against_malaria = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3536,14 +4375,18 @@ prophylaxis_against_malaria = {
 		}
 	}
 	effect = {
+		colonial_life_rating = -5
 		land_attrition = -0.05
 		soldier_to_pop_loss = 0.01
-		colonial_life_rating = -5
 	}
 }
 
+# Vaccination #
 vaccination = {
-	limit = { medicine = 1 }
+	limit = {
+		medicine = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3562,14 +4405,14 @@ vaccination = {
 	}
 }
 
+# Vitamins #
 vitamins = {
 	limit = {
 		medicine = 1
-		analytic_philosophy = 1
+		# analytic_philosophy = 1
 		# electricity = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 2
 		modifier = {
@@ -3591,15 +4434,22 @@ vitamins = {
 	}
 }
 
-# inorganic_chemistry
+## Inorganic Chemistry ##
+# Alfred Nobel #
 alfred_nobel = {
-	limit = { inorganic_chemistry = 1 }
-	news = no
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 6
 		modifier = {
 			factor = 2
 			invention = nitroglycerin
+		}
+		modifier = {
+			factor = 2
+			invention = armour_piercing_exploding_projectiles
 		}
 	}
 	effect = {
@@ -3609,8 +4459,12 @@ alfred_nobel = {
 	}
 }
 
+# Artificial Fertilisers #
 artificial_fertilizers = {
-	limit = { inorganic_chemistry = 1 }
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3623,21 +4477,40 @@ artificial_fertilizers = {
 		}
 	}
 	effect = {
-		rgo_goods_output = { cotton = 0.02 }
-		rgo_goods_output = { tobacco = 0.02 }
-		rgo_goods_output = { coffee = 0.1 }
-		rgo_goods_output = { grain = 0.02 }
-		rgo_goods_output = { opium = 0.02 }
-		rgo_goods_output = { cattle = 0.02 }
-		rgo_goods_output = { fruit = 0.02 }
-
-		factory_goods_output = { fertilizer = 0.05 }
+		factory_goods_output = {
+			fertilizer = 0.05
+		}
+		farm_rgo_eff = 0.02
+		rgo_goods_output = {
+			cattle = 0.02
+		}
+		rgo_goods_output = {
+			coffee = 0.1
+		}
+		rgo_goods_output = {
+			cotton = 0.02
+		}
+		rgo_goods_output = {
+			fruit = 0.02
+		}
+		rgo_goods_output = {
+			grain = 0.02
+		}
+		rgo_goods_output = {
+			opium = 0.02
+		}
+		rgo_goods_output = {
+			tobacco = 0.02
+		}
 	}
 }
 
+# Artificial Nitrates #
 artficial_nitrates = {
-	limit = { inorganic_chemistry = 1 }
-	news = no
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 5
 	}
@@ -3648,8 +4521,12 @@ artficial_nitrates = {
 	}
 }
 
+# Catalytic Fermentative Process #
 catalytic_fermentative_process = {
-	limit = { inorganic_chemistry = 1 }
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3668,8 +4545,12 @@ catalytic_fermentative_process = {
 	}
 }
 
+# Chemical Wood Pulp Process #
 chemical_wood_pulp_process = {
-	limit = { inorganic_chemistry = 1 }
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3688,28 +4569,34 @@ chemical_wood_pulp_process = {
 	}
 }
 
+# Dmitri Mendeleev #
 dmitri_mendeleev = {
 	limit = {
 		inorganic_chemistry = 1
-		# organic_chemistry = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 5
 			analytic_philosophy = 1
 		}
+		modifier = {
+			factor = 5
+			organic_chemistry = 1
+		}
 	}
 	effect = {
-		# shared_prestige = 2.5
 		shared_prestige = 5
 	}
 }
 
+# Germ Theory & Experimental Pathology #
 germ_theory = {
-	limit = { inorganic_chemistry = 1 }
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = -2
 		modifier = {
@@ -3725,7 +4612,6 @@ germ_theory = {
 			factor = 2
 			invention = vaccination
 		}
-
 		modifier = {
 			factor = 2
 			invention = aerial_bacteria_and_antiseptic_principle
@@ -3736,21 +4622,21 @@ germ_theory = {
 	}
 }
 
+# Joseph Lister #
 joseph_lister = {
 	limit = {
 		inorganic_chemistry = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			# OR = {
+			OR = {
 				nationalvalue = nv_order
 				nationalvalue = nv_unity
 				nationalvalue = nv_dominion
-			# }
+			}
 		}
 		modifier = {
 			factor = 4
@@ -3762,22 +4648,22 @@ joseph_lister = {
 	}
 }
 
+# Louis Pasteur #
 louis_pasteur = {
 	limit = {
 		inorganic_chemistry = 1
-		not = { invention = robert_koch }
+		NOT = { invention = robert_koch }
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			# OR = {
+			OR = {
 				nationalvalue = nv_order
 				nationalvalue = nv_unity
 				nationalvalue = nv_dominion
-			# }
+			}
 		}
 		modifier = {
 			factor = 4
@@ -3789,8 +4675,12 @@ louis_pasteur = {
 	}
 }
 
+# Nitroglycerin #
 nitroglycerin = {
-	limit = { inorganic_chemistry = 1 }
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3806,12 +4696,16 @@ nitroglycerin = {
 		factory_goods_output = {
 			explosives = 0.02
 		}
+		mine_RGO_eff = 0.5
 	}
 }
 
+# Prophylactics #
 prophylactics = {
-	limit = { inorganic_chemistry = 1 }
-	news = no
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3828,15 +4722,22 @@ prophylactics = {
 			nationalvalue = nv_liberty
 			nationalvalue = nv_independence
 		}
+		modifier = {
+			factor = 6
+			NOT = { pop_majority_religion = catholic }
+		}
 	}
 	effect = {
 		pop_growth = -0.0002
 	}
 }
 
+# Rosendale Cement #
 rosendale_cement = {
-	limit = { inorganic_chemistry = 1 }
-	news = no
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 15
 	}
@@ -3847,8 +4748,12 @@ rosendale_cement = {
 	}
 }
 
+# Rubber Vulcanization #
 rubber_vulcanization = {
-	limit = { inorganic_chemistry = 1 }
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3867,13 +4772,62 @@ rubber_vulcanization = {
 	}
 }
 
-#organic_chemistry
+# Zacherlin #
+zacherlin = {
+	limit = {
+		inorganic_chemistry = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			year = 1860
+		}
+	}
+	effect = {
+		rgo_goods_throughput = {
+			fruit = 0.05
+		}
+	}	
+}
+
+## Organic Chemistry ##
+# Accelerated Sulfur Vulcanisation #
+accelerated_vulcanization = {
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+		year = 1900
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 2
+			invention = i_scientific_management
+		}		
+	}
+	effect = {
+		rgo_goods_throughput = {
+			rubber = 0.25
+		} 
+	}
+}
+
+# Archibald Scott Couper #
 archibald_scott_couper = {
 	limit = {
 		organic_chemistry = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 2
 	}
@@ -3882,8 +4836,32 @@ archibald_scott_couper = {
 	}
 }
 
+# Bergius Process #
+bergius_process = {
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 10
+			invention = import_substitution_industrialization
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			oil = 0.02
+		}
+	}
+}
+
+# Carbon Soil Enrichment #
 carbon_soil_enrichment = {
-	limit = { organic_chemistry = 1 }
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3896,23 +4874,38 @@ carbon_soil_enrichment = {
 		}
 	}
 	effect = {
-		rgo_goods_output = { cotton = 0.05 }
-		rgo_goods_output = { tobacco = 0.05 }
-		rgo_goods_output = { coffee = 0.1 }
-		rgo_goods_output = { grain = 0.05 }
-		rgo_goods_output = { opium = 0.05 }
-		rgo_goods_output = { cattle = 0.05 }
-		rgo_goods_output = { fruit = 0.05 }
+		farm_rgo_eff = 0.05
+		rgo_goods_output = {
+			cattle = 0.05
+		}
+		rgo_goods_output = {
+			coffee = 0.1
+		}
+		rgo_goods_output = {
+			cotton = 0.05
+		}
+		rgo_goods_output = {
+			fruit = 0.05
+		}
+		rgo_goods_output = {
+			grain = 0.05
+		}
+		rgo_goods_output = {
+			opium = 0.05
+		}
+		rgo_goods_output = {
+			tobacco = 0.05
+		}
 	}
 }
 
+# Cholera Vaccine #
 cholera_vaccine = {
 	limit = {
 		organic_chemistry = 1
-		empiricism = 1
+		#empiricism = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 0
 		modifier = {
@@ -3923,6 +4916,16 @@ cholera_vaccine = {
 			factor = 2
 			invention = louis_pasteur
 		}
+		modifier = {
+			factor = 4
+			year = 1875
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_country = {
+				invention = cholera_vaccine
+			}
+		}
 	}
 	effect = {
 		pop_growth = 0.0001
@@ -3930,8 +4933,12 @@ cholera_vaccine = {
 	}
 }
 
+# Cracking #
 cracking = {
-	limit = { organic_chemistry = 1 }
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3948,11 +4955,43 @@ cracking = {
 	}
 }
 
+# Fractional Distillation #
+fractional_distillation = {
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 4
+			invention = vacuum_distillation
+		}
+		modifier = {
+			factor = 6
+			OR = {
+				invention = daimlers_automobile
+				invention = wright_n_langleys_aeroplanes
+			}
+		}
+		modifier = {
+			factor = -10
+			NOT = { year = 1885 }
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			fuel = 0.025
+		}
+	}	
+}
+
+# Gaslights #
 gaslights = {
 	limit = {
-		# organic_chemistry = 1
-		inorganic_chemistry = 1
-		}
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -3969,12 +5008,13 @@ gaslights = {
 	}
 }
 
+# Poudre B #
 poudre_b = {
 	limit = {
-		breech_loaded_rifles = 1
+		#breech_loaded_rifles = 1
 		organic_chemistry = 1
+		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 3
 		modifier = {
@@ -3983,33 +5023,45 @@ poudre_b = {
 		}
 	}
 	effect = {
-		factory_goods_output = { ammunition = 0.03 }
-		rgo_goods_output = { sulphur = 0.03 }
-		infantry = {
-			attack = 0.15
-			defence = 0.15
+		army_base = {
+			supply_consumption = 0.05
+		}
+		factory_goods_output = {
+			ammunition = 0.03
+		}
+		factory_goods_output = {
+			explosives = 0.03
 		}
 		guard = {
 			attack = 0.15
 			defence = 0.15
 		}
-		army_base = {
-			supply_consumption = 0.05
+		infantry = {
+			attack = 0.15
+			defence = 0.15
+		}
+		rgo_goods_output = {
+			sulphur = 0.03
 		}
 	}
 }
 
+# Robert Koch #
 robert_koch = {
 	limit = {
 		organic_chemistry = 1
+		NOT = { invention = louis_pasteur }
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			nationalvalue = nv_order
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_unity
+				nationalvalue = nv_dominion
+			}
 		}
 		modifier = {
 			factor = 4
@@ -4021,13 +5073,41 @@ robert_koch = {
 	}
 }
 
+# Rotenone #
+rotenone = {
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 4
+			year = 1890
+		}
+		modifier = {
+			factor = 6
+			year = 1920
+		}
+	}
+	effect = {
+		rgo_goods_throughput = {
+			fruit = 0.1
+		}
+	}	
+}
+
+# Synthetic Dye #
 synthetic_dye = {
-	limit = { organic_chemistry = 1 }
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-            regenerative_furnaces = 1
+			mechanized_mining = 1
 		}
 		modifier = {
 			factor = 2
@@ -4039,13 +5119,13 @@ synthetic_dye = {
 	}
 }
 
+# The Periodic Table #
 the_periodic_table = {
 	limit = {
 		organic_chemistry = 1
-		empiricism = 1
+		#empiricism = 1
 		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
 		base = 0
 		modifier = {
@@ -4054,22 +5134,46 @@ the_periodic_table = {
 		}
 	}
 	effect = {
-		shared_prestige = 25
-		rgo_goods_throughput = {
-			sulphur = 0.05
-		}
 		factory_goods_output = {
 			fertilizer = 0.05
 		}
 		factory_goods_output = {
 			fuel = 0.05
 		}
+		rgo_goods_throughput = {
+			sulphur = 0.05
+		}
+		shared_prestige = 25
 	}
 }
 
-# electricity
+# Vacuum Distillation #
+vacuum_distillation = {
+	limit = {
+		organic_chemistry = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 4
+			invention = cracking
+		}
+	}
+	effect = {
+		factory_goods_throughput = {
+			fuel = 0.05
+		}
+	}	
+}
+
+## Electricity ##
+# Bell & Grey’s Telephones #
 bell_n_greys_telephones = {
-	limit = { electricity = 1 }
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -4092,31 +5196,50 @@ bell_n_greys_telephones = {
 	}
 }
 
+# Carl Bosch #
 carl_bosch = {
-	limit = { electricity = 1 }
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
 			electrical_power_generation = 1
 		}
-		# modifier = {
-			# factor = -4
-			# NOT = {
-				# invention = haber_process
-			# }
+		modifier = {
+			factor = -4
+			NOT = {
+				invention = haber_process
+			}
 		}
+	}
 	effect = {
-#		factory_goods_output = { sulphur = 0.2 }
-		rgo_goods_output = { sulphur = 0.2 }
-		factory_goods_output = { oil = 0.2 }
-		factory_goods_output = { fertilizer = 0.2 }
-		factory_goods_output = { fuel = 0.2 }
+		factory_goods_output = {
+			fertilizer = 0.2
+		}
+		factory_goods_output = {
+			fuel = 0.2
+		}
+		factory_goods_output = {
+			oil = 0.2
+		}
+		factory_goods_output = {
+			sulphur = 0.2
+		}
+		rgo_goods_output = {
+			sulphur = 0.2
+		}
 	}
 }
 
+# Edison’s Light Bulb #
 edison_light_bulb = {
-	limit = { electricity = 1 }
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -4133,8 +5256,12 @@ edison_light_bulb = {
 	}
 }
 
+# Electrical Lighting #
 electrical_lighting = {
-	limit = { electricity = 1 }
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -4155,24 +5282,93 @@ electrical_lighting = {
 	}
 }
 
+# Haber Process #
+haber_process = {
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = edison_light_bulb
+		}
+		modifier = {
+			factor = 2
+			electrical_power_generation = 1
+		}
+		modifier = {
+			factor = -6
+			NOT = { steam_turbine = 1 }
+		}
+		modifier = {
+			factor = -6
+			NOT = { pneumatic_and_hydraulics = 1 }
+		}
+		modifier = {
+			factor = -6
+			NOT = {
+				invention = edison_light_bulb
+			}
+		}
+	}
+	effect = {
+		activate_building = synthetic_sulphur_factory
+	}
+}
+
+# Synthetic Cement #
 synthetic_cement = {
 	limit = {
-		 electricity = 1
+		electricity = 1
+		has_country_flag = existing_country
 	}
-	news = no
 	chance = {
-		base = 15
+		base = 5
+		modifier = {
+			factor = 5
+			synthetic_polymers = 1
+		}
+		modifier = {
+			factor = 5
+			invention = import_substitution_industrialization
+		}
+		modifier = {
+			factor = 5
+			war = yes
+		}
 	}
 	effect = {
 		factory_goods_output = {
-			cement = 0.1
+			cement = 0.125
 		}
 	}
 }
 
+# Synthetic Rubber #
+synthetic_rubber = {
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+		modifier = {
+			factor = -10 
+			civilized = no
+		}
+	}
+	effect = {
+
+	}
+}
+
+# Telephone Switchboard #
 telephone_switchboard = {
 	limit = {
 		electricity = 1
+		has_country_flag = existing_country
 	}
 	chance = {
 		base = 0
@@ -4192,8 +5388,46 @@ telephone_switchboard = {
 	}
 }
 
+# Vacuum Tube #
+vacuum_tube = {
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 1
+		modifier = {
+			factor = 5
+			invention = direct_current
+		}
+		modifier = {
+			factor = 5
+			invention = alternating_current
+		}
+		modifier = {
+			factor = 5
+			electrical_power_generation = 1
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			electric_gear = 0.03
+		}
+		factory_goods_output = {
+			radio = 0.03
+		}
+		factory_goods_output = {
+			telephones = 0.03
+		}
+	}
+}
+
+# X-Rays #
 x_rays = {
-	limit = { electricity = 1 }
+	limit = {
+		electricity = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -4211,32 +5445,13 @@ x_rays = {
 	}
 }
 
-vacuum_tube = {
-	limit = {
-		electricity = 1
-		electrical_power_generation = 1
-	}
-	chance = {
-		base = 1
-		modifier = {
-			factor = 5
-			invention = direct_current
-		}
-		modifier = {
-			factor = 5
-			invention = alternating_current
-		}
-	}
-	effect = {
-		factory_goods_output = { radio = 0.03 }
-		factory_goods_output = { telephones = 0.03 }
-		factory_goods_output = { electric_gear = 0.03 }
-	}
-}
-
-#synthetic_polymers
+## Synthetic Polymers ##
+# Bakelite #
 bakelite = {
-	limit = { synthetic_polymers = 1 }
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -4255,22 +5470,72 @@ bakelite = {
 	}
 }
 
-methyl_isoprene = {
-	limit = { synthetic_polymers = 1 }
-	news = no
+# DDT #
+ddt = {
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
 	chance = {
-		base = 6
+		base = 1
+		modifier = {
+			factor = 9
+			year = 1930
+		}
 	}
 	effect = {
-#		factory_goods_output = {
-		rgo_goods_output = {
-			rubber = 0.25
+		rgo_goods_throughput = {
+			fruit = 0.1
+		}
+	}	
+}
+
+# Fischer-Tropsch Process #
+fischer_tropsch_process = {
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 5
+			invention = import_substitution_industrialization
+		}
+		modifier = {
+			factor = 5
+			invention = bergius_process
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			oil = 0.04
 		}
 	}
 }
 
+# Methyl Isoprene #
+methyl_isoprene = {
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 6
+	}
+	effect = {
+		factory_goods_output = {
+			rubber = 0.25
+		} 
+	}
+}
+
+# Nylon #
 nylon = {
-	limit = { synthetic_polymers = 1 }
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 1
 		modifier = {
@@ -4285,8 +5550,34 @@ nylon = {
 	}
 }
 
+# Penicillin #
+penicillin = {
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+		modifier = {
+			factor = 5
+			year = 1925
+		}
+		modifier = {
+			factor = 5
+			war = yes
+		}
+	}
+	effect = {
+		soldier_to_pop_loss = 0.005
+	}
+}
+
+# Rayon #
 rayon = {
-	limit = { synthetic_polymers = 1 }
+	limit = {
+		synthetic_polymers = 1
+		has_country_flag = existing_country
+	}
 	chance = {
 		base = 2
 		modifier = {
@@ -4304,18 +5595,3 @@ rayon = {
 		}
 	}
 }
-
-# Methyl Isoprene #
-methyl_isoprene = {
-	limit = { synthetic_polymers = 1 }
-	news = no
-	chance = {
-		base = 6
-	}
-	effect = {
-		factory_goods_output = {
-			rubber = 0.25
-		} 
-	}
-}
-

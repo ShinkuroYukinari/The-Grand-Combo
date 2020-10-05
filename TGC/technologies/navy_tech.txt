@@ -569,8 +569,6 @@ clipper_design = {
 	cost = 3600
 	unciv_military = yes
 
-	#activate_building = clipper_shipyard 
-
 	clipper_transport = {
 		maximum_speed = 1
 	}
@@ -664,8 +662,6 @@ steamers = {
 	cost = 7200
 	unciv_military = yes
 
-	#activate_building = steamer_shipyard 
-	
 	clipper_transport = {
 		maximum_speed = 2
 	}
@@ -785,9 +781,6 @@ iron_steamers = {
 	commerce_raider = {
 		maximum_speed = 2
 	}
-	# navy_base = {
-		# maximum_speed = 2
-	# }
 	steam_transport = {
 		maximum_speed = 3
 	}
@@ -912,9 +905,6 @@ steel_steamers = {
 	monitor = {
 		maximum_speed = 1
 	}
-	# navy_base = {
-		# maximum_speed = 2
-	# }
 	steam_transport = {
 		maximum_speed = 2
 	}
@@ -1023,9 +1013,6 @@ steam_turbine_ships = {
 	monitor = {
 		maximum_speed = 6
 	}
-	# navy_base = {
-		# maximum_speed = 2
-	# }
 	steam_transport = {
 		maximum_speed = 6
 	}
@@ -1132,9 +1119,6 @@ oil_driven_ships = {
 	dreadnought = {
 		maximum_speed = 4
 	}
-	# navy_base = {
-		# maximum_speed = 2
-	# }
 	steam_transport = {
 		maximum_speed = 7
 	}
@@ -1838,7 +1822,7 @@ alphabetic_flag_signaling = {
 	cost = 3600
 	unciv_military = yes
 
-	supply_range = 0.5 #0.1
+	supply_range = 0.5
 	
 	ai_chance = {
 		factor = 0.25
@@ -1891,7 +1875,7 @@ naval_plans = {
 	cost = 7200
 	unciv_military = yes
 
-	supply_range = 0.5 #0.1
+	supply_range = 0.5
 	
 	ai_chance = {
 		factor = 0.25
@@ -1949,7 +1933,7 @@ naval_statistics = {
 	cost = 10800
 	unciv_military = yes
 
-	supply_range = 0.5 #0.1
+	supply_range = 0.5
 
 		ai_chance = {
 		factor = 0.25
@@ -2015,7 +1999,7 @@ naval_logistics = {
 	cost = 14400
 	unciv_military = yes
 
-	supply_range = 1.0 #0.1
+	supply_range = 1.0
 
 	ai_chance = {
 		factor = 0.25
@@ -2072,7 +2056,7 @@ naval_directionism = {
 	cost = 18000
 	unciv_military = yes
 
-	supply_range = 1.0 #0.1
+	supply_range = 1.0
 
 	ai_chance = {
 		factor = 0.25
@@ -2129,7 +2113,7 @@ naval_integration = {
 	cost = 21600
 	unciv_military = yes
 
-	supply_range = 1.0 #0.1
+	supply_range = 1.0
 
 	ai_chance = {
 		factor = 0.25

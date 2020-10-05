@@ -6,7 +6,6 @@ piston_steam_engine = {
 	year = 1836
 	cost = 3600
 
-#	activate_building = fabric_factory
 	farm_rgo_eff = 0.15
 	rgo_goods_output = {
 		coal = 0.05
@@ -78,7 +77,6 @@ high_pressure_steam_engine = {
 	cost = 7200
 
 	farm_rgo_eff = 0.15
-	#mine_rgo_eff = 0.05
 	rgo_goods_output = {
 		coal = 0.05
 	}
@@ -149,7 +147,6 @@ compound_steam_engines = {
 	cost = 10800
 
 	farm_rgo_eff = 0.15
-	#mine_rgo_eff = 0.1
 	rgo_goods_output = {
 		coal = 0.1
 	}
@@ -220,7 +217,6 @@ steam_turbine = {
 	cost = 14400
 
 	farm_rgo_eff = 0.15
-	#mine_rgo_eff = 0.15
 	rgo_goods_output = {
 		coal = 0.15
 	}
@@ -295,7 +291,6 @@ combustion_engine = {
 	cost = 18000
 
 	farm_rgo_eff = 0.15
-	#mine_rgo_eff = 0.15
 	rgo_goods_output = {
 		coal = 0.15
 	}
@@ -367,7 +362,6 @@ electrical_power_generation = {
 
 	factory_throughput = 0.1
 	farm_rgo_eff = 0.15
-	#mine_rgo_eff = 0.15
 	rgo_goods_output = {
 		coal = 0.15
 	}
@@ -433,8 +427,6 @@ mechanical_production = {
 	area = mechanization
 	year = 1836
 	cost = 3600
-
-	#activate_building = regular_clothes_factory 
 
 	ai_chance = {
 		factor = 2
@@ -537,7 +529,6 @@ semi_automatization = {
 	year = 1836
 	cost = 10800
 
-	#factory_cost = -0.1 
 	factory_throughput = 0.05
 	
 	ai_chance = {
@@ -730,7 +721,6 @@ hot_blast = {
 	year = 1836
 	cost = 3600
 	
-#	activate_building = steel_factory 
 	rgo_goods_output = {
 		coal = 0.2
 	}
@@ -933,12 +923,6 @@ regenerative_furnaces = {
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
-	# rgo_size = {
-		# iron = 0.2
-	# }
-	# rgo_size = {
-		# precious_metal = 0.2
-	# }
 	
 	ai_chance = {
 		factor = 2
@@ -1044,9 +1028,6 @@ drilling_and_blasting = {
 	rgo_size = {
 		iron = 0.5
 	}
-	# rgo_size = {
-		# precious_metal = 0.2
-	# }
 	rgo_size = {
 		sulphur = 0.5
 	}
@@ -1153,9 +1134,6 @@ advanced_metallurgy = {
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
-	# rgo_size = {
-		# sulphur = 0.2
-	# }
 	
 	ai_chance = {
 		factor = 2
@@ -1248,9 +1226,6 @@ electric_furnace = {
 	year = 1905
 	cost = 21600
 
-	# factory_goods_output = {
-		# steel = 0.05 
-	# }
 	rgo_goods_output = {
 		coal = 0.4
 	}
@@ -1336,8 +1311,6 @@ experimental_railroad = {
 	year = 1836
 	cost = 3600
 
-#	activate_building = railroad
-	
 	ai_chance = {
 		factor = 3
 		modifier = {
@@ -1393,7 +1366,7 @@ early_railroad = {
 	year = 1840
 	cost = 7200
 
-#	max_railroad = 1
+
 	
 	ai_chance = {
 		factor = 3
@@ -1446,7 +1419,7 @@ iron_railroad = {
 	year = 1850
 	cost = 10800
 
-#	max_railroad = 1 
+ 
 
 	ai_chance = {
 		factor = 3
@@ -1487,7 +1460,7 @@ steel_railroad = {
 	year = 1870
 	cost = 14400
 
-#	max_railroad = 1 
+ 
 
 	ai_chance = {
 		factor = 3
@@ -1525,7 +1498,7 @@ integral_rail_system = {
 	year = 1898
 	cost = 18000
 
-#	max_railroad = 1
+
 
 	ai_chance = {
 		factor = 3
@@ -1563,7 +1536,7 @@ limited_access_roads = {
 	year = 1915
 	cost = 21600
 
-#	max_railroad = 1
+
 
 	ai_chance = {
 		factor = 3
@@ -1600,8 +1573,6 @@ basic_chemistry = {
 	area = chemistry_and_electricity
 	year = 1836
 	cost = 3600
-
-#	activate_building = fertilizer_factory 
 
 	ai_chance = {
 		factor = 20
