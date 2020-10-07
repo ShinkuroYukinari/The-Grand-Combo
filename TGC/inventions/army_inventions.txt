@@ -778,8 +778,8 @@ grand_battle_plan_doctrine = {
 	}
 	effect = {
 		army_base = {
-		maneuver = 2
-		reconnaissance = 2
+			maneuver = 2
+			reconnaissance = 2
 		}
 	}
 }
@@ -1139,10 +1139,9 @@ flintlock_rifle_armament = {
 		}
 	}
 	effect = {
-		#activate_unit = regular
 		cavalry = {
-		attack = 0.5
-		supply_consumption = 0.10
+			attack = 0.5
+			supply_consumption = 0.10
 		}
 		combat_width = -1
 		infantry = {
@@ -1714,7 +1713,7 @@ steel_small_arms_production = {
 		}
 	}
 	effect = {
-#		activate_building = late_small_arms_factory 
+
 	}
 }
 
@@ -2048,7 +2047,7 @@ horse_artillery = {
 		}
 	}
 	effect = {
-		# activate_unit = horse_artillery
+
 	}
 }
 
@@ -2128,10 +2127,7 @@ rifled_barrels = {
 		artillery = {
 			attack = 0.3
 			defence = 0.3
-			fort = {
-				attack = 0.25
-				defence = 0.25
-			}
+			siege = 0.25
 		}
 		# horse_artillery = {
 			# attack = 0.3
@@ -3765,7 +3761,7 @@ stables = {
 		base = 6
 	}
 	effect = {
-#		activate_building = stables 
+
 	}
 }
 

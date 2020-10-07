@@ -5,7 +5,7 @@
 ### Financial Institutions ###
 ## Private Banks ##
 # Cement Factories #
-cement_factories  = {
+cement_factories = {
 	limit = {
 		private_banks = 1
 		has_country_flag = existing_country
@@ -28,9 +28,9 @@ cement_factories  = {
 
 ## Stock Exchange ##
 # Cigar Factories #
-cigar_factories  = {
+cigar_factories = {
 	limit = { 
-		stock_exchange =  1
+		stock_exchange = 1
 		has_country_flag = existing_country
 	}
 	chance = {
@@ -117,7 +117,7 @@ regulated_buying_and_selling_of_stocks = {
 }
 
 # Stock Exchanges #
-stock_exchanges  = {
+stock_exchanges = {
 	limit = {
 		stock_exchange = 1
 		has_country_flag = existing_country
@@ -222,7 +222,7 @@ liquidation_of_assets = {
 }
 
 # Merchant Banking #
-merchant_banking  = {
+merchant_banking = {
 	limit = {
 		business_banks = 1
 		has_country_flag = existing_country
@@ -808,7 +808,6 @@ james_mill = {
 		}
 	}
 	effect = {
-		activate_building = luxury_furniture_factory
 		permanent_prestige = 1
 	}
 }
@@ -870,7 +869,7 @@ industrial_sawmills = {
 }
 
 # Sugar Refineries #
-sugar_refineries  = {
+sugar_refineries = {
 	limit = {
 		early_classical_theory_and_critique = 1
 		has_country_flag = existing_country
@@ -968,7 +967,6 @@ john_ramsay_mcculloch = {
 		}
 	}
 	effect = {
-		activate_building = furniture_factory
 		loan_interest = -0.002
 	}
 }
@@ -1019,7 +1017,6 @@ nassau_william_sr = {
 		}
 	}
 	effect = {
-		activate_building = paper_mill 
 		loan_interest = -0.002
 	}
 }
@@ -1977,7 +1974,7 @@ richard_kahn = {
 }
 
 # Rubber Boot Factories #
-rubber_boot_factories  = {
+rubber_boot_factories = {
 	limit = {
 		keynesian_economics = 1 
 		has_country_flag = existing_country
@@ -1990,7 +1987,7 @@ rubber_boot_factories  = {
 		}
 		modifier = {
 			factor = -10 
-			NOT = { assembly_line =  1 }
+			NOT = { assembly_line = 1 }
 		}
 	}
 	effect = {
@@ -2056,7 +2053,6 @@ portland_cement = {
 		}
 	}
 	effect = {
-		# activate_building = cement_factory
 		factory_goods_output = {
 			cement = 0.175
 		}
@@ -2095,7 +2091,7 @@ wool_cloth_factories = {
 		}
 	}
 	effect = {
-		activate_building =  wool_mill
+		activate_building = wool_mill
 	}
 }
 
@@ -2492,7 +2488,7 @@ centralized_economic_planning = {
 }
 
 # Houses of Fashion #
-fashion_houses  = {
+fashion_houses = {
 	limit = {
 		government_interventionism = 1 
 		has_country_flag = existing_country
@@ -2505,11 +2501,11 @@ fashion_houses  = {
 		}
 		modifier = {
 			factor = -10 
-			NOT = { assembly_line =  1 }
+			NOT = { assembly_line = 1 }
 		}
 	}
 	effect = {
-#		activate_building = advanced_luxury_clothes_factory
+
 	}
 }
 
@@ -2566,7 +2562,7 @@ mixed_economy = {
 }
 
 # Modernist Furnishing #
-modernist_furnishing  = {
+modernist_furnishing = {
 	limit = {
 		government_interventionism = 1
 		has_country_flag = existing_country
@@ -2579,11 +2575,11 @@ modernist_furnishing  = {
 		}
 		modifier = {
 			factor = -10 
-			NOT = { assembly_line =  1 }
+			NOT = { assembly_line = 1 }
 		}
 	}
 	effect = {
-#		activate_building = advanced_luxury_furniture_factory
+
 	}
 }
 
@@ -2642,7 +2638,7 @@ canning_process = {
 }
 
 # Cigarette Factories #
-cigarette_making_machines  = {
+cigarette_making_machines = {
 	limit = {
 		guild_based_production = 1
 		has_country_flag = existing_country
@@ -2655,7 +2651,7 @@ cigarette_making_machines  = {
 		}
 	}
 	effect = {
-#		activate_building = cigarette_factory
+
 	}
 }
 
@@ -2692,7 +2688,7 @@ defamation_of_women = {
 }
 
 # Industrial Slaughterhouses #
-beef_canneries  = {
+beef_canneries = {
 	limit = {
 		guild_based_production = 1
 		has_country_flag = existing_country
@@ -2705,7 +2701,7 @@ beef_canneries  = {
 		}
 	}
 	effect = {
-		activate_building = canned_food_factory 
+
 	}
 }
 
@@ -2753,7 +2749,7 @@ shoe_factories = {
 		}
 	}
 	effect = {
-#		activate_building = shoe_factory
+
 	}
 }
 
@@ -2938,18 +2934,15 @@ luxury_focus = {
 		base = 5
 	}
 	effect = {
-		# factory_goods_output = {
-			# boots = 0.02
-		# }
-		# factory_goods_output = {
-			# cigars = 0.02
-		# }
 		factory_goods_output = {
 			luxury_clothes = 0.02
 		}
 		factory_goods_output = {
 			luxury_furniture = 0.02
 		}
+		# factory_goods_output = {
+			# sugar = 0.02
+		# }
 		factory_goods_output = {
 			wine = 0.02
 		}
@@ -2973,29 +2966,14 @@ necessity_focus = {
 	}
 	effect = {
 		factory_goods_output = {
-			canned_food = 0.02
-		}
-		# factory_goods_output = {
-			# cigarettes = 0.02
-		# }
-		factory_goods_output = {
 			fabric = 0.02
-		}
-		factory_goods_output = {
-			fertilizer = 0.02
 		}
 		factory_goods_output = {
 			furniture = 0.02
 		}
 		factory_goods_output = {
-			glass = 0.02
-		}
-		factory_goods_output = {
 			regular_clothes = 0.02
 		}
-		# factory_goods_output = {
-			# shoes = 0.02
-		# }
 		factory_goods_output = {
 			liquor = 0.02
 		}
@@ -3028,14 +3006,14 @@ high_tech_focus = {
 			fuel = 0.02
 		}
 		factory_goods_output = {
+			oil = 0.02
+		}
+		factory_goods_output = {
 			radio = 0.02
 		}
 		factory_goods_output = {
 			telephones = 0.02
 		}
-		# factory_goods_output = {
-			# pharmaceuticals = 0.02
-		# }
 	}
 }
 

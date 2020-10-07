@@ -1,9 +1,14 @@
-# Do not change tags in here without changing every other reference to them.
-# If adding new forms of governemnts, make sure they are uniquely named.
+########################
+### Government Types ###
+########################
+
+# Do not change tags in here without changing every other reference to them. #
+# If adding new forms of governemnts, make sure they are uniquely named.     #
 
 absolute_monarchy = {
-	liberal = yes
+	# ideologies allowed in this government type
 	conservative = yes
+	liberal = yes
 	reactionary = yes
 
 	election = no
@@ -12,7 +17,7 @@ absolute_monarchy = {
 }
  
 bourgeois_dictatorship = {
-	#which ideology of parties.
+	# ideologies allowed in this government type
 	anarcho_liberal = yes
 
 	election = no
@@ -21,25 +26,25 @@ bourgeois_dictatorship = {
 }
 
 colonial_company = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
+	# ideologies allowed in this government type
 	conservative = yes
+	liberal = yes
 	reactionary = yes
+	socialist = yes
 
 	election = no
 	appoint_ruling_party = yes
 }
 
 democracy = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
-	communist = yes
+	# ideologies allowed in this government type
 	anarcho_liberal = yes
+	communist = yes
+	conservative = yes
 	fascist = yes
+	liberal = yes
+	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 48
@@ -48,14 +53,14 @@ democracy = {
 }
 
 dominion = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
-	communist = yes
+	# ideologies allowed in this government type
 	anarcho_liberal = yes
+	communist = yes
+	conservative = yes
 	fascist = yes
+	liberal = yes
+	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 48
@@ -63,7 +68,7 @@ dominion = {
 }
 
 fascist_dictatorship = {
-	#which ideology of parties.
+	# ideologies allowed in this government type
 	fascist = yes
 
 	election = no
@@ -72,14 +77,14 @@ fascist_dictatorship = {
 }
  
 federal_democracy = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
-	communist = yes
+	# ideologies allowed in this government type
 	anarcho_liberal = yes
+	communist = yes
+	conservative = yes
 	fascist = yes
+	liberal = yes
+	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 48
@@ -88,14 +93,14 @@ federal_democracy = {
 }
 
 french_bourbon = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
-	communist = yes
+	# ideologies allowed in this government type
 	anarcho_liberal = yes
+	communist = yes
+	conservative = yes
 	fascist = yes
+	liberal = yes
+	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 48
@@ -103,14 +108,14 @@ french_bourbon = {
 }
 
 hms_government = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
-	communist = yes
+	# ideologies allowed in this government type
 	anarcho_liberal = yes
+	communist = yes
+	conservative = yes
 	fascist = yes
+	liberal = yes
+	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 48
@@ -119,13 +124,14 @@ hms_government = {
 }
 
 parliamentary_republic = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
+	# ideologies allowed in this government type
+	anarcho_liberal = yes
 	communist = yes
+	conservative = yes
 	fascist = yes
+	liberal = yes
+	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 60
@@ -134,10 +140,10 @@ parliamentary_republic = {
 }
 
 presidential_dictatorship = {
-	#which ideology of parties.
-	reactionary = yes
-	fascist = yes
+	# ideologies allowed in this government type
 	conservative = yes
+	fascist = yes
+	reactionary = yes
 	
 	election = no
 	appoint_ruling_party = yes
@@ -145,7 +151,8 @@ presidential_dictatorship = {
 }
 
 proletarian_dictatorship = {
-	#which ideology of parties.
+	# ideologies allowed in this government type
+	anarchist = yes
 	communist = yes
 	socialist = yes
 
@@ -155,11 +162,11 @@ proletarian_dictatorship = {
 }
 
 prussian_constitutionalism = {
-	#which ideology of parties.
-	liberal = yes
-	socialist = yes
+	# ideologies allowed in this government type
 	conservative = yes
+	liberal = yes
 	reactionary = yes
+	socialist = yes
 
 	election = yes
 	duration = 48
@@ -168,19 +175,19 @@ prussian_constitutionalism = {
 }
 
 theocracy = {
-	#which ideology of parties.
-	reactionary = yes
+	# ideologies allowed in this government type
 	conservative = yes
+	reactionary = yes
 
 	election = no
 	appoint_ruling_party = yes
 }
  
 trade_unions_congress = {
-	#which ideology of parties.
+	# ideologies allowed in this government type
+	anarchist = yes
 	communist = yes
 	socialist = yes
-	anarchist = yes
 
 	election = yes
 	duration = 12

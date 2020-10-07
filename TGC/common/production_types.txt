@@ -653,7 +653,7 @@ liquor_distillery = {
 luxury_clothes_factory = {	 
 	template = factory_template	# overhead = 9.825
 	input_goods = { 
-		#fur = 0.52				# cost = 0.00 (now), 6.50 (later)
+		#furs = 0.52			# cost = 0.00 (now), 6.50 (later)
 		regular_clothes = 0.9	# cost = 5.22
 		silk = 3.9 #3.25		# cost = 39.00 (now), 32.50 (later)
 								# total input & overhead costs = 54.045

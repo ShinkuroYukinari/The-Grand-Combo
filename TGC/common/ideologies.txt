@@ -227,7 +227,7 @@ liberal_group = {
 	# Radicals #
 	anarcho_liberal = {
 		color = { 150 150 10 }
-		date = 1840.1.1 #Eventually to be removed -- Radicalism predates the game timeline, but requires all country files to be updated.
+		date = 1840.1.1
 		uncivilized = no
 		
 		add_political_reform = {

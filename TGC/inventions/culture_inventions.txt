@@ -52,7 +52,7 @@ luxury_clothes_factories = {
 		}
 	}
 	effect = {
-		activate_building = luxury_clothes_factory
+
 	}
 }
 
@@ -70,7 +70,7 @@ wineries = {
 		}
 	}
 	effect = {
-		activate_building = winery  
+
 	}
 }
 
@@ -1033,7 +1033,7 @@ modern_archaeology = {
 			has_country_modifier = pompeji_excavations
 		}
 		modifier = {
-			factor =  -8
+			factor = -8
 			NOT = { invention = early_archaeology }
 		}
 	}
@@ -2642,7 +2642,9 @@ the_classless_society = {
 	effect = {
 		permanent_prestige = 1
 		plurality = -0.05
-		army_base = { discipline = -0.2 } #The traditional symbols of loyalty to the state are swept away
+		army_base = { 
+			discipline = -0.2
+		} #The traditional symbols of loyalty to the state are swept away
 		morale = -0.2 #The army is purged of the professional officer class that inspire them 
 	}
 }
@@ -2678,7 +2680,9 @@ the_leadership_principle = {
 	effect = {
 		permanent_prestige = 1
 		plurality = -0.05
-		army_base = { discipline = 0.2 } #The troops have sworn an oath of personal loyalty to the leader
+		army_base = {
+			discipline = 0.2
+		} #The troops have sworn an oath of personal loyalty to the leader
 		morale = 0.2 #greater fighting spirit inculcated into the army
 	}
 }
@@ -2739,11 +2743,11 @@ the_white_mans_burden = {
 		}
 		modifier = {
 			factor = 25
-			nationalism_n_imperialism  = 1
+			nationalism_n_imperialism = 1
 		}
 		modifier = {
 			factor = 25
-			market_regulations  = 1
+			market_regulations = 1
 		}
 		modifier = {
 			factor = 10
@@ -2865,7 +2869,9 @@ anticlericalism = {
 		}
 	}
 	core_pop_consciousness_modifier = 0.03
-	effect = { plurality = 0.02 }
+	effect = {
+		plurality = 0.02
+	}
 }
 
 # Aristocracy #
@@ -2903,7 +2909,9 @@ aristocracy = {
 			}	
 		}
 	}
-	effect = { plurality = -0.1 }
+	effect = {
+		plurality = -0.1
+	}
 	political_reform_desire = -0.05
 	social_reform_desire = -0.05
 }
@@ -2941,7 +2949,9 @@ bureaucracy = {
 			nationalvalue = nv_equality
 		}
 	}
-	effect = { plurality = 0.02 }
+	effect = {
+		plurality = 0.02
+	}
 	political_reform_desire = 0.10
 }
 
@@ -2999,7 +3009,9 @@ clericalism = {
 	}
 	core_pop_militancy_modifier = -0.01
 	core_pop_consciousness_modifier = -0.03
-	effect = { plurality = -0.05 }
+	effect = {
+		plurality = -0.05
+	}
 }
 
 # Clericalism vs. Anti-Clericalism #
@@ -3456,7 +3468,7 @@ indigenous_garrisoning = {
 		}
 		modifier = {
 			factor = 25
-			steel_railroad  = 1
+			steel_railroad = 1
 		}
 		modifier = {
 			factor = 10
@@ -3466,11 +3478,11 @@ indigenous_garrisoning = {
 		}
 		modifier = {
 			factor = 25
-			machine_guns  = 1
+			machine_guns = 1
 		}
 		modifier = {
 			factor = 25
-			main_armament  = 1
+			main_armament = 1
 		}
 		modifier = {
 			factor = 10
@@ -3856,7 +3868,7 @@ the_dark_continent = {
 		}
 		modifier = {
 			factor = 20
-			military_logistics  = 1
+			military_logistics = 1
 		}
 		modifier = {
 			factor = 20
@@ -4326,7 +4338,7 @@ lenin = {
 
 ## Associationism ##
 # Alexander Bain #
-alexander_bain  = {
+alexander_bain = {
 	limit = {
 		associationism = 1
 		has_country_flag = existing_country
@@ -4344,7 +4356,7 @@ alexander_bain  = {
 }
 
 # Søren Kierkegaard #
-soren_kierkegaard  = {
+soren_kierkegaard = {
 	limit = {
 		associationism = 1
 		has_country_flag = existing_country
@@ -4358,7 +4370,7 @@ soren_kierkegaard  = {
 }
 
 # Thomas Brown #
-thomas_brown  = {
+thomas_brown = {
 	limit = {
 		associationism = 1
 		has_country_flag = existing_country
@@ -4395,7 +4407,7 @@ william_hamilton = {
 
 ## Phenomenalism ##
 # Alfred Binet #
-alfred_binet  = {
+alfred_binet = {
 	limit = {
 		phenomenalism = 1
 		has_country_flag = existing_country
@@ -4420,7 +4432,7 @@ alfred_binet  = {
 }
 
 # Charles Spearman #
-charles_spearman  = {
+charles_spearman = {
 	limit = {
 		phenomenalism = 1
 		has_country_flag = existing_country
@@ -4444,7 +4456,7 @@ charles_spearman  = {
 }
 
 # Eugenics #
-eugenics  = {
+eugenics = {
 	limit = {
 		phenomenalism = 1
 		has_country_flag = existing_country
@@ -4481,7 +4493,7 @@ eugenics  = {
 }
 
 # Francis Galton #
-francis_galton  = {
+francis_galton = {
 	limit = {
 		phenomenalism = 1
 		has_country_flag = existing_country
@@ -4500,7 +4512,7 @@ francis_galton  = {
 
 ## Experimental Psychology ##
 # Edward Titchener #
-edward_titchener  = {
+edward_titchener = {
 	limit = {
 		experimental_psychology = 1
 		has_country_flag = existing_country
@@ -4518,7 +4530,7 @@ edward_titchener  = {
 }
 
 # G. Stanley Hall #
-gs_hall  = {
+gs_hall = {
 	limit = {
 		experimental_psychology = 1
 		has_country_flag = existing_country
@@ -4537,7 +4549,7 @@ gs_hall  = {
 }
 
 # Hermann Ebbinghaus #
-hermann_ebbinghaus  = {
+hermann_ebbinghaus = {
 	limit = {
 		experimental_psychology = 1
 		has_country_flag = existing_country
@@ -4556,7 +4568,7 @@ hermann_ebbinghaus  = {
 }
 
 # Mary Calkins #
-mary_calkins  = {
+mary_calkins = {
 	limit = {
 		experimental_psychology = 1
 		has_country_flag = existing_country
@@ -4613,7 +4625,7 @@ the_nancy_school = {
 }
 
 # Wilhelm Wundt #
-wilhelm_wundt  = {
+wilhelm_wundt = {
 	limit = {
 		experimental_psychology = 1
 		has_country_flag = existing_country
@@ -4628,7 +4640,7 @@ wilhelm_wundt  = {
 }
 
 # William James #
-william_james  = {
+william_james = {
 	limit = {
 		experimental_psychology = 1
 		has_country_flag = existing_country
@@ -4648,7 +4660,7 @@ william_james  = {
 
 ## Psychoanalysis ##
 # Alfred Adler #
-alfred_adler  = {
+alfred_adler = {
 	limit = {
 		psychoanalysis = 1
 		has_country_flag = existing_country
@@ -4667,7 +4679,7 @@ alfred_adler  = {
 }
 
 # Anna Freud #
-anna_freud  = {
+anna_freud = {
 	limit = {
 		psychoanalysis = 1
 		has_country_flag = existing_country
@@ -4707,7 +4719,7 @@ jung = {
 }
 
 # Karen Horney #
-karen_horney  = {
+karen_horney = {
 	limit = {
 		psychoanalysis = 1
 		has_country_flag = existing_country
@@ -4778,7 +4790,7 @@ cinematographic_propaganda = {
 }
 
 # Edward C. Tolman #
-ec_tolman  = {
+ec_tolman = {
 	limit = {
 		behaviorism = 1
 		has_country_flag = existing_country
@@ -4797,7 +4809,7 @@ ec_tolman  = {
 }
 
 # Edward L. Thorndike #
-el_thorndike  = {
+el_thorndike = {
 	limit = {
 		behaviorism = 1
 		has_country_flag = existing_country
@@ -4831,7 +4843,7 @@ emile_coue = {
 }
 
 # Ivan Pavlov #
-ivan_pavlov  = {
+ivan_pavlov = {
 	limit = {
 		behaviorism = 1
 		has_country_flag = existing_country
@@ -4846,7 +4858,7 @@ ivan_pavlov  = {
 }
 
 # John B. Watson #
-jb_watson  = {
+jb_watson = {
 	limit = {
 		behaviorism = 1
 		has_country_flag = existing_country

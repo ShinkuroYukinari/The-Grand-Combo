@@ -234,7 +234,9 @@ torpedo_tactics = {
 		}
 	}
 	effect = {
-		cruiser = { torpedo_attack = 1 }
+		cruiser = {
+			torpedo_attack = 1
+		}
 	}	
 }
 
