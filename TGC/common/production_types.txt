@@ -138,7 +138,7 @@ aeroplane_factory = {
 								# total input & overhead costs = 90.815 (now); 92.815 (later)
 	}
 	output_goods = aeroplanes
-	value = 1.2					# income = 132.00
+	value = 1.20				# income = 132.00
 								# profit = 41.185 (now); 39.185 (later)
 	bonus = {
 		trigger = { has_building = electric_gear_factory }
@@ -161,7 +161,7 @@ ammunition_factory = {
 								# total input & overhead costs = 30.10
 	}
 	output_goods = ammunition 
-	value = 2.2					# income = 39.60
+	value = 2.20				# income = 39.60
 								# profit = 9.50
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -187,7 +187,7 @@ artillery_factory = {
 								# total input & overhead costs = 67.425
 	}
 	output_goods = artillery 
-	value = 1.8					# income = 108.00
+	value = 1.80				# income = 108.00
 								# profit = 40.575
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -210,7 +210,7 @@ barrel_factory = {
 								# total input & overhead costs = 88.50
 	}
 	output_goods = barrels 
-	value = 1.2					# income = 117.60
+	value = 1.20				# income = 117.60
 								# profit = 29.10
 	bonus = {
 		trigger = { has_building = automobile_factory }
@@ -237,7 +237,7 @@ canned_food_factory = {
 								# total input & overhead costs = 29.15
 	}
 	output_goods = canned_food 
-	value = 3					# income = 48.00
+	value = 3.00				# income = 48.00
 								# profit = 18.85
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -267,7 +267,7 @@ small_arms_factory = {
 								# total input & overhead costs = 59.925
 	}
 	output_goods = small_arms 
-	value = 2.2					# income = 81.40
+	value = 2.20				# income = 81.40
 								# profit = 21.475
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -288,7 +288,7 @@ cement_factory = {
 								# total input & overhead costs = 37.475
 	} 
 	output_goods = cement 
-	value = 3.5					# income = 56.00
+	value = 3.50				# income = 56.00
 								# profit = 18.525
 	bonus = {
 		trigger = { trade_goods_in_state = coal }
@@ -307,7 +307,7 @@ clipper_shipyard = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 11.5				# income = 483.00
+	value = 11.50				# income = 483.00
 								# profit = 52.175
 	bonus = {
 		trigger = { has_building = lumber_mill }
@@ -334,7 +334,7 @@ electric_gear_factory = {
 								# total input & overhead costs = 72.825
 	}
 	output_goods = electric_gear 
-	value = 5.6					# income = 89.60
+	value = 5.60				# income = 89.60
 								# profit = 16.775
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -363,7 +363,7 @@ explosives_factory = {
 								# total input & overhead costs = 54.225
 	}
 	output_goods = explosives 
-	value = 3.4					# income = 68.00
+	value = 3.40				# income = 68.00
 								# profit = 13.775
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
@@ -384,7 +384,7 @@ fabric_factory = {
 								# total input & overhead costs = 69.825
 	}
 	output_goods = fabric
-	value = 44					# income = 79.20
+	value = 44.00				# income = 79.20
 								# profit = 9.375
 	bonus = {
 		trigger = { trade_goods_in_state = cotton }
@@ -409,7 +409,7 @@ fertilizer_factory = {
 								# total input & overhead costs = 45.825
 	}
 	output_goods = fertilizer 
-	value = 5.5					# income = 55.00
+	value = 5.50				# income = 55.00
 								# profit = 9.175
 	bonus = {
 		trigger = {
@@ -430,7 +430,7 @@ fuel_refinery = {
 								# total input & overhead costs = 39.825
 	}
 	output_goods = fuel
-	value = 2					# income = 50.00
+	value = 2.00				# income = 50.00
 								# profit = 10.175
 	bonus = {
 		trigger = { 
@@ -451,7 +451,7 @@ glass_factory = {
 								# total input & overhead costs = 42.025
 	}
 	output_goods = glass 
-	value = 18					# income = 52.20
+	value = 18.00				# income = 52.20
 								# profit = 10.175
 	bonus = {
 		trigger = { trade_goods_in_state = coal }
@@ -467,7 +467,6 @@ lumber_mill = {
 								# total input & overhead costs = 99.825
 	}
 	output_goods = lumber 
-	
 	value = 107.00				# income = 107.00
 								# profit = 7.175
 	bonus = {
@@ -556,7 +555,7 @@ wool_mill = {
 								# total input & overhead costs = 46.425
 	}
 	output_goods = fabric
-	value = 30					# income = 54.00
+	value = 30.00				# income = 54.00
 								# profit = 7.575
 	bonus = {
 		trigger = { trade_goods_in_state = cotton }
