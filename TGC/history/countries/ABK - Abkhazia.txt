@@ -60,7 +60,7 @@ piston_steam_engine = 1
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-oob = ABK_oob.txt
+oob  = ABK_oob .txt
 # 1861.1.1 = {
 # # Technologies
 	# flintlock_rifles = 1

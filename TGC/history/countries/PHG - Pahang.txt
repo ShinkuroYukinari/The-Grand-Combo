@@ -52,4 +52,4 @@ flintlock_rifles = 1
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-oob = "PHG_oob.txt"
+oob  = "PHG_oob .txt"

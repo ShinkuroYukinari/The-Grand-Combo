@@ -122,7 +122,7 @@ consumer_goods = {
 		available_from_start = yes
 	}
 	liquor = { 
-		cost = 4.40 #Vanilla is 6.4
+		cost = 4.40
 		color = { 76 5 0 }
 		available_from_start = yes
 	}

@@ -68,4 +68,4 @@ mechanical_production = 1
 #Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
-oob = "KRA_oob.txt"
+oob  = "KRA_oob .txt"

@@ -65,4 +65,4 @@ mechanical_production = 1
 #Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
-# oob = "MOL_oob.txt"
+# oob  = "MOL_oob .txt"

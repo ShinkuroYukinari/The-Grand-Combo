@@ -204,4 +204,4 @@ govt_flag = {
 	government = hms_government
 	flag = democracy
 }
-oob = "RPL_oob.txt"
+oob  = "RPL_oob .txt"

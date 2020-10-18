@@ -3,15 +3,15 @@
 #################
 
 # Do not change tags in here without changing every other reference to them. #
-# If adding new buildings, make sure they are uniquely named. #
-#
-# Order in here matters for selection priority if icons are overlapping, #
-# so leave bases on top #
-# 
-# cost = x #==> extra construction cost (added to goods cost estimations) #
-# time = x #==> number of days to build.#
-#
-# Audax Validator EnableCommentMetadata
+# If adding new buildings, make sure they are uniquely named.				 #
+#																			 #
+# Order in here matters for selection priority if icons are overlapping, 	 #
+# so leave bases on top 													 #
+#																			 #
+# cost = x #==> extra construction cost (added to goods cost estimations)	 #
+# time = x #==> number of days to build.									 #
+#																			 #
+# Audax Validator EnableCommentMetadata										 #
 
 ### MILITARY BUILDINGS ###
 # Naval Base #
@@ -453,7 +453,7 @@ wool_mill = {
 	visibility = yes
 	onmap = no
 
-	production_type = wool_fabric_factory
+	production_type = wool_mill
 	pop_build_factory = yes
 }
 

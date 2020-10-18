@@ -190,7 +190,7 @@ upper_house = { #total 100
 	socialist = 0
 }
 schools = traditional_academic
-oob = "TEX_oob.txt"
+oob  = "TEX_oob .txt"
 # 1861.1.1 = {
 # # Technologies
 	# post_napoleonic_thought = 1

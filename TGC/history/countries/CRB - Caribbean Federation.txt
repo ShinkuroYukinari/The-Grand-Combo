@@ -196,4 +196,4 @@ upper_house = { #total 100
 	socialist = 79
 }
 schools = traditional_academic
-#oob = "CRB_oob.txt"
+#oob  = "CRB_oob .txt"

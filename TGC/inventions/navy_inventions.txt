@@ -379,6 +379,7 @@ fleet_auxiliary_cv_doctrine = {
 		base = 6
 	}
 	effect = {
+
 	}
 }
 
@@ -392,6 +393,9 @@ fleet_auxiliary_ss_doctrine = {
 		base = 6
 	}
 	effect = {
+		submarine = {
+			gun_power = 5
+		}
 	}
 }
 
@@ -1086,10 +1090,10 @@ improved_ship_building_r&d = {
 	}
 	effect = {
 		factory_goods_output = {
-			steamer_convoy = 0.02
+			clipper_convoy = 0.02
 		}
 		factory_goods_output = {
-			clipper_convoy = 0.02
+			steamer_convoy = 0.02
 		}
 	}
 }
@@ -1168,6 +1172,7 @@ submarines = {
 		}
 	}
 	effect = {
+		activate_unit = submarine
 	}
 }
 
@@ -1409,6 +1414,12 @@ ocean_going_submarines = {
 		}
 	}
 	effect = {
+		submarine = {
+			build_time = 50
+			gun_power = 5
+			maximum_speed = -2
+			supply_consumption = 0.5
+		}
 	}
 }
 
@@ -1513,6 +1524,11 @@ advanced_submarines = {
 		}
 	}
 	effect = {
+		submarine = {
+			maximum_speed = 3
+			supply_consumption = 0.05
+			torpedo_attack = 8
+		}
 	}
 }
 
@@ -1747,6 +1763,10 @@ torpedo_gyroscope = {
 		base = 6
 	}
 	effect = {
+		submarine = {
+			gun_power = 1
+			supply_consumption = 0.05
+		}
 	}
 }
 
@@ -1925,6 +1945,10 @@ self_propelled_torpedoes = {
 		}
 	}
 	effect = {
+		submarine = {
+			gun_power = 3
+			supply_consumption = 0.05
+		}
 	}
 }
 

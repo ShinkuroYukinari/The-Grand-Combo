@@ -2022,14 +2022,6 @@ carronade = {
 			defence = 0.2
 			siege = 0.25
 		}
-		# horse_artillery = {
-			# attack = 0.1
-			# defence = 0.1
-			# fort = {
-				# attack = 0.1
-				# defence = 0.1
-			# }
-		# }
 	}
 }
 
@@ -2074,15 +2066,7 @@ twelve_pounder = {
 			attack = 0.3
 			defence = 0.3
 			siege = 0.25
-			}
-		# horse_artillery = {
-			# attack = 0.1
-			# defence = 0.1
-			# fort = {
-				# attack = 0.1
-				# defence = 0.1
-			# }
-		# }
+		}
 	}
 }
 
@@ -2129,14 +2113,6 @@ rifled_barrels = {
 			defence = 0.3
 			siege = 0.25
 		}
-		# horse_artillery = {
-			# attack = 0.3
-			# defence = 0.3
-			# fort = {
-				# attack = 0.1
-				# defence = 0.1
-			# }
-		# }
 	}
 }
 
@@ -2164,14 +2140,6 @@ rifled_barrels = {
 			defence = 0.5
 			siege = 0.25
 		}
-		# horse_artillery = {
-			# attack = 0.2
-			# defence = 0.2
-			# fort = {
-				# attack = 0.1
-				# defence = 0.1
-			# }
-		#}
 	}
 }
 
@@ -2460,7 +2428,6 @@ mortar = {
 		}
 	}
 	effect = {
-		#horse_artillery
 		artillery = {
 			attack = 0.2
 			defence = 0.2

@@ -108,4 +108,4 @@ govt_flag = {
 	flag = theocracy
 }
 
-oob = "LIE_oob.txt"
+oob  = "LIE_oob .txt"

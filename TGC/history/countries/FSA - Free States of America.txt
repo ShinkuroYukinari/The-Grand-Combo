@@ -190,4 +190,4 @@ upper_house = {
 	communist = 0
 }
 schools = commerce_tech_school
-#oob = "FSA_oob.txt"
+#oob  = "FSA_oob .txt"

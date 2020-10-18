@@ -132,4 +132,4 @@ schools = traditional_academic
 	# government = theocracy
 	# flag = monarchy
 # }
-#oob = "MYA_oob.txt"
+#oob  = "MYA_oob .txt"

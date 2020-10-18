@@ -204,4 +204,4 @@ schools = traditional_academic
 	# government = absolute_monarchy | bourgeous_dictatorship | colonial_company | democracy | dominion | federal_democracy | french_bourbon | hms_government | parliamentary_republic | presidential_dictatorship | proletarian_dictatorship | prussian_constitutionalism | theocracy | trade_unions_congress
 	# flag = communist | fascist | monarchy | republic
 # }
-oob = "MTC_oob.txt"
+oob  = "MTC_oob .txt"

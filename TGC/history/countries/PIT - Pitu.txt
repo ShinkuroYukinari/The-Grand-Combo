@@ -50,4 +50,4 @@ set_country_flag = lacking_writing_system
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-oob = "PIT_oob.txt"
+oob  = "PIT_oob .txt"

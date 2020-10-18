@@ -103,4 +103,4 @@ upper_house = {
 	communist = 0
 }
 
-oob = "HEH_oob.txt"
+oob  = "HEH_oob .txt"

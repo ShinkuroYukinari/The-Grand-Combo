@@ -103,4 +103,4 @@ upper_house = {
 
 schools = army_tech_school
 
-#oob = "HOH_oob.txt"
+#oob  = "HOH_oob .txt"

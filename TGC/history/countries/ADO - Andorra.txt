@@ -60,4 +60,4 @@ basic_chemistry = 1
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-oob = "ADO_oob.txt"
+oob  = "ADO_oob .txt"

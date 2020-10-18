@@ -45,4 +45,4 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
-oob = "KHA_oob.txt"
+oob  = "KHA_oob .txt"

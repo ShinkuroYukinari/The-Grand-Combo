@@ -54,9 +54,9 @@ modern_winemaking = yes
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-oob = "JUN_oob.txt"
+oob  = "JUN_oob .txt"
 # 1861.1.1 = {
-	# oob = "/1861/BER_oob.txt"
+	# oob  = "/1861/BER_oob .txt"
 # }
 # 1861.1.1 = {
 	# literacy = 0.10

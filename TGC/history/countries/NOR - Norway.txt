@@ -75,7 +75,7 @@ basic_chemistry = 1
 consciousness = 1
 nonstate_consciousness = 0
 schools = industrial_tech_school
-oob = "NOR_oob.txt"
+oob  = "NOR_oob .txt"
 # 1861.1.1 = {
 # # Political reforms
 # slavery = no_slavery

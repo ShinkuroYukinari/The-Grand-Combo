@@ -57,9 +57,9 @@ nonstate_consciousness = 0
 # Inventions
 ##bottling_process = yes
 modern_winemaking = yes
-oob = "RYU_oob.txt"
+oob  = "RYU_oob .txt"
 # 1861.1.1 = {
-	# oob = "/1861/RYU_oob.txt"
+	# oob  = "/1861/RYU_oob .txt"
 # }
 # 1861.1.1 = {
 # foreign_weapons = yes_foreign_weapons

@@ -727,6 +727,9 @@ hot_blast = {
 	rgo_goods_output = {
 		iron = 0.2
 	}
+	# rgo_goods_throughput = {
+		# metal = 1
+	# }
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
@@ -804,6 +807,9 @@ mechanized_mining = {
 	rgo_goods_output = {
 		iron = 0.3
 	}
+	# rgo_goods_throughput = {
+		# metal = 0.2
+	# }
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
@@ -920,6 +926,9 @@ regenerative_furnaces = {
 	rgo_goods_output = {
 		iron = 0.3
 	}
+	# rgo_goods_throughput = {
+		# metal = 0.5
+	# }
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
@@ -1019,6 +1028,9 @@ drilling_and_blasting = {
 	rgo_goods_output = {
 		iron = 0.5
 	}
+	# rgo_goods_throughput = {
+		# metal = 1
+	# }
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
@@ -1131,6 +1143,9 @@ advanced_metallurgy = {
 	rgo_goods_output = {
 		iron = 0.4
 	}
+	# rgo_goods_throughput = {
+		# metal = 1
+	# }
 	rgo_goods_output = {
 		sulphur = 0.2
 	}
@@ -1232,6 +1247,9 @@ electric_furnace = {
 	rgo_goods_output = {
 		iron = 0.4
 	}
+	# rgo_goods_throughput = {
+		# metal = 4
+	# }
 	
 	ai_chance = {
 		factor = 2

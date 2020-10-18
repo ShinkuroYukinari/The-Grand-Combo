@@ -45,4 +45,4 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies 
 set_country_flag = shiite_country
-oob = "AWA_oob.txt"
+oob  = "AWA_oob .txt"

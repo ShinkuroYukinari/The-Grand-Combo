@@ -38,5 +38,6 @@ submarine = {
 	min_port_level = 2
 	limit_per_port = -1
 	supply_consumption_score = 4
+	torpedo_attack = 0
 }
 

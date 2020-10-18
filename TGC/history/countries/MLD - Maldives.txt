@@ -43,4 +43,4 @@ upper_house = {
 	communist = 0
 }
 set_country_flag = sunni_country
-oob = "MLD_oob.txt"
+oob  = "MLD_oob .txt"

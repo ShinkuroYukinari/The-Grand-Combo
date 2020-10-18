@@ -109,9 +109,9 @@ foreign_investment = {
 		WUR = 5000
 		BAD = 5000
 }
-oob = "AUS_oob.txt"
+oob  = "AUS_oob .txt"
 # 1861.1.1 = {
-	# oob = "/1861/AUS_oob.txt"
+	# oob  = "/1861/AUS_oob .txt"
 	# prestige = 110
 # }
 # 1861.1.1 = {

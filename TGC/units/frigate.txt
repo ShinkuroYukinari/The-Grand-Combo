@@ -8,6 +8,7 @@ frigate = {
 	sprite = Frigate
 	unit_type = light_ship
 	floating_flag = yes
+	active = yes
 	colonial_points = 2
 	
 	#Core Abilities

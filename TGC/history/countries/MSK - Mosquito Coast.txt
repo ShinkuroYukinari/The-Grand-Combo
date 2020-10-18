@@ -103,4 +103,4 @@ upper_house = { #total 100
 	socialist = 0
 }
 schools = unciv_tech_school
-oob = "MSK_oob.txt"
+oob  = "MSK_oob .txt"

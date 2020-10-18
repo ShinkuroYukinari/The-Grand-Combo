@@ -85,7 +85,7 @@ political_religion = yes
 paternalism = yes
 schools = industrial_tech_school
 # 1861.1.1 = {
-	# oob = "/1861/SWI_oob.txt"
+	# oob  = "/1861/SWI_oob .txt"
 	# plurality = 60
 	# literacy = 0.90
 # }

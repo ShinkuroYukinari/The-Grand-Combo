@@ -142,7 +142,7 @@ new_fort = {
 }
 
 new_infrastructure = {
-	file = "Misc_Fortification.wav"
+	file = "Misc_Infrastructure.wav"
 	volume = 0.5
 }
 

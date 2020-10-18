@@ -9,6 +9,7 @@ clipper_transport = {
 	unit_type = transport
 	transport = yes
 	floating_flag = yes
+	active = yes
 
 	#Core Abilities
 	priority = 5

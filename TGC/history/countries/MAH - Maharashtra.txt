@@ -52,4 +52,4 @@ modern_winemaking = yes
 foreign_weapons = yes_foreign_weapons
 # Technologies
 flintlock_rifles = 1
-oob = "MAH_oob.txt"
+oob  = "MAH_oob .txt"

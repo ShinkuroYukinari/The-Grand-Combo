@@ -202,4 +202,4 @@ upper_house = { #total 100
 	socialist = 0
 }
 schools = naval_tech_school
-#oob = "NBR_oob.txt"
+#oob  = "NBR_oob .txt"

@@ -65,7 +65,7 @@ mechanical_production = 1
 #Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
-oob = "WAL_oob.txt"
+oob  = "WAL_oob .txt"
 # 1861.1.1 = {
 # # Technologies
 	# post_napoleonic_thought = 1

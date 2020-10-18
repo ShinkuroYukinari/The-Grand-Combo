@@ -128,4 +128,4 @@ upper_house = { #total 100
 	reactionary = 12
 	socialist = 0
 }
-oob = "MEX_oob.txt"
+oob  = "MEX_oob .txt"

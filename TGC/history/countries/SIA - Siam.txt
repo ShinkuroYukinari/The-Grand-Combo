@@ -53,13 +53,13 @@ nonstate_consciousness = 6
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
-oob = "SIA_oob.txt"
+oob  = "SIA_oob .txt"
 govt_flag = {
 	government = absolute_monarchy
 	flag = theocracy
 }
 # 1861.1.1 = {
-	# oob = "/1861/SIA_oob.txt"
+	# oob  = "/1861/SIA_oob .txt"
 	# literacy = 0.10
 	# non_state_culture_literacy = 0.05
 	

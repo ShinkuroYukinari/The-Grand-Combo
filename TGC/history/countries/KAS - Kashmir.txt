@@ -49,5 +49,5 @@ centralization = unitary
 colonial_policy = no_colonies 
 set_country_flag = hindu_country
 # 1861.1.1 = {
-	# oob = "/1861/KAS_oob.txt"
+	# oob  = "/1861/KAS_oob .txt"
 # }

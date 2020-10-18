@@ -108,4 +108,4 @@ schools = traditional_academic
 	# flag = theocracy
 # }
 
-#oob = "ANK_oob.txt"
+#oob  = "ANK_oob .txt"

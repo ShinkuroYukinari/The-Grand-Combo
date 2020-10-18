@@ -199,4 +199,4 @@ govt_flag = {
 	government = absolute_monarchy
 	flag = theocracy
 }
-#oob = "JAM_oob.txt"
+#oob  = "JAM_oob .txt"

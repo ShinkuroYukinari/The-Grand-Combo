@@ -187,4 +187,4 @@ upper_house = {
 	communist = 0
 }
 schools = traditional_academic
-#oob = "NAF_oob.txt"
+#oob  = "NAF_oob .txt"

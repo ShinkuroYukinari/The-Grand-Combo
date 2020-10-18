@@ -49,7 +49,7 @@ upper_house = {
 }
 set_country_flag = sunni_country
 # 1861.1.1 = {
-	# oob = "/1861/SWK_oob.txt"
+	# oob  = "/1861/SWK_oob .txt"
 # }
 # 1861.1.1 = {
 # foreign_weapons = yes_foreign_weapons

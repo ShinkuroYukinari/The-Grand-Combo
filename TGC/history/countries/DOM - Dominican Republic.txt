@@ -174,9 +174,9 @@ upper_house = { #total 100
 	socialist = 0
 }
 schools = traditional_academic
-#oob = "DOM_oob.txt"
+#oob  = "DOM_oob .txt"
 # 1861.1.1 = {
-	# oob = "/1861/DOM_oob.txt"
+	# oob  = "/1861/DOM_oob .txt"
 	# plurality = 50
 	# literacy = 0.17
 # }

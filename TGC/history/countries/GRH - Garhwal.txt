@@ -53,7 +53,7 @@ modern_winemaking = yes
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-oob = "GRH_oob.txt"
+oob  = "GRH_oob .txt"
 # 1861.1.1 = {
 	# literacy = 0.04
 	# non_state_culture_literacy = 0.02

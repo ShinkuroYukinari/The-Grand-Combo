@@ -80,7 +80,7 @@ basic_chemistry = 1
 # Starting Consciousness
 consciousness = 3
 nonstate_consciousness = 1
-oob = "PAR_oob.txt"
+oob  = "PAR_oob .txt"
 # 1861.1.1 = {
 # # Technologies
 	# post_napoleonic_thought = 1

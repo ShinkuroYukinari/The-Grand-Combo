@@ -45,4 +45,4 @@ upper_house = {
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
-oob = "NGA_oob.txt"
+oob  = "NGA_oob .txt"

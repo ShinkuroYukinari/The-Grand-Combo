@@ -103,4 +103,4 @@ upper_house = {
 
 schools = army_tech_school
 
-oob = "SGM_oob.txt"
+oob  = "SGM_oob .txt"
