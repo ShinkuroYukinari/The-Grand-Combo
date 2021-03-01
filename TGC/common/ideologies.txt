@@ -2,73 +2,74 @@
 
 ## Conservative Parties ##
 conservative_group = {
-	# Conservatives #
+	##Mainstream Conservative Groups
+	# Conservatives Shell #
 	conservative = {
 		color = { 10 10 250 }
 		can_reduce_militancy = yes
-		
+
 		add_political_reform = {
 			base = 0
 			group = {
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 1
 						political_movement_strength = 0.1
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 2
 						political_movement_strength = 0.2
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 3
 						political_movement_strength = 0.3
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 4
 						political_movement_strength = 0.4
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 5
 						political_movement_strength = 0.5
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 6
 						political_movement_strength = 0.6
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 7
 						political_movement_strength = 0.7
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 8
 						political_movement_strength = 0.8
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 9
 						political_movement_strength = 0.9
 					}
@@ -83,69 +84,69 @@ conservative_group = {
 			group = {
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 1
 						social_movement_strength = 0.1
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 2
 						social_movement_strength = 0.2
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 3
 						social_movement_strength = 0.3
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 4
 						social_movement_strength = 0.4
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 5
 						social_movement_strength = 0.5
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 6
 						social_movement_strength = 0.6
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 7
 						social_movement_strength = 0.7
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 8
 						social_movement_strength = 0.8
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 9
 						social_movement_strength = 0.9
 					}
 				}
 			}
-			
+
 		}
 		remove_social_reform = {
 			base = 0
@@ -157,11 +158,287 @@ conservative_group = {
 			base = -0.5
 		}
 	}
-
-	# Reactionaries #
+	# Authoritarian Conservatives (internally Reactionary) #
 	reactionary = {
 		color = { 30 30 100 }
-		
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Classical Conservatives #
+	classical_conservative = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Irredentists #
+	irredentist_ideology = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Liberal Conservatives #
+	liberal_conservative = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Progressivists #
+	progressivist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	##Special Conservatives
+	# Monarchists #
+	monarchist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Imperialists #
+	imperialist_ideology = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Isolationists #
+	isolationist_ideology = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Olicharchists #
+	olicharchist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Islamism #
+	islamist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Theoconservative #
+	theoconservative = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Ultramontanist #
+	ultramontanist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Tribalist #
+	tribalist = {
+		color = { 70 30 140 }
+
 		add_political_reform = {
 			base = 0
 		}
@@ -185,12 +462,13 @@ conservative_group = {
 
 ## Fascist & Ultra-Nationalist Parties ##
 fascist_group = {
+	##Mainstream Fascist Ideologies
 	# Fascists #
 	fascist = {
 		uncivilized = no
 		color = { 60 60 60 }
 		date = 1915.1.1
-	
+
 		add_political_reform = {
 			base = 1
 			modifier = {
@@ -220,16 +498,110 @@ fascist_group = {
 			}
 		}
 	}
-}	
+	# National Socialism #
+	national_socialist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# National Populism #
+	national_populist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Ultra Nationalist #
+	ultra_nationalist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	##Special Fascists
+	# Zionists #
+	zionist = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+}
 
 ## Liberal Parties ##
 liberal_group = {
-	# Radicals #
+	##Mainstream Liberalist Ideologies
+	# Radicals/Social Liberals (Internally anarcho_liberal might change this at some point for confusion reasons) #
 	anarcho_liberal = {
 		color = { 150 150 10 }
 		date = 1840.1.1 #Eventually to be removed -- Radicalism predates the game timeline, but requires all country files to be updated.
 		uncivilized = no
-		
+
 		add_political_reform = {
 			base = 1
 		}
@@ -242,20 +614,19 @@ liberal_group = {
 		remove_social_reform = {
 			base = 1
 		}
-		
+
 		add_military_reform = {
 			base = -1
 		}
-		
+
 		add_economic_reform = {
 			base = -1
 		}
 	}
-	
-	# Liberals #
+	# Liberals Shell#
 	liberal = {
-		color = { 255 255 0 }
-		
+		color = { 0 255 0 }
+
 		add_political_reform = {
 			base = 1
 		}
@@ -267,63 +638,63 @@ liberal_group = {
 			group = {
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 1
 						social_movement_strength = 0.1
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 2
 						social_movement_strength = 0.2
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 3
 						social_movement_strength = 0.3
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 4
 						social_movement_strength = 0.4
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 5
 						social_movement_strength = 0.5
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 6
 						social_movement_strength = 0.6
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 7
 						social_movement_strength = 0.7
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 8
 						social_movement_strength = 0.8
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 9
 						social_movement_strength = 0.9
 					}
@@ -340,16 +711,133 @@ liberal_group = {
 			base = 1
 		}
 	}
+	# Classical Liberals #
+	classical_liberal = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Conservative Liberals #
+	conservative_liberal = {
+		color = { 70 30 140 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	##Special Liberals
+	# Republicans #
+	republicanist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Globalist #
+	globalist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# National Liberals #
+	national_liberal = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
 }
-	
-## Socialist & Communist Parties ##
-socialist_group = {
-	# Syndicalists #
+
+## Anarchist Parties ##
+anarchist_group = {
+	##Mainstream Anarchist
+	# Anarchist Shell #
 	anarchist = {
 		uncivilized = no
 		color = { 150 60 60 }
 		date = 1881.1.1 #Founding of Industrial Workers of the World
-		
+
 		add_political_reform = {
 			base = 1
 		}
@@ -361,77 +849,321 @@ socialist_group = {
 		}
 		remove_social_reform = {
 			base = 0
-		}	
+		}
 	}
+	# Anarcho Communists #
+	anarchist_communist = {
+		uncivilized = no
+		color = { 150 60 60 }
+		date = 1881.1.1 #Founding of Industrial Workers of the World
 
-	# Communists #
+		add_political_reform = {
+			base = 1
+		}
+		remove_political_reform = {
+			base = 0
+		}
+		add_social_reform = {
+			base = 1
+		}
+		remove_social_reform = {
+			base = 0
+		}
+	}
+	# Anarcho Syndicalists #
+	anarchist_syndicalist = {
+		uncivilized = no
+		color = { 150 60 60 }
+		date = 1881.1.1 #Founding of Industrial Workers of the World
+
+		add_political_reform = {
+			base = 1
+		}
+		remove_political_reform = {
+			base = 0
+		}
+		add_social_reform = {
+			base = 1
+		}
+		remove_social_reform = {
+			base = 0
+		}
+	}
+	# Mutualists #
+	mutualist = {
+		uncivilized = no
+		color = { 150 60 60 }
+		date = 1881.1.1 #Founding of Industrial Workers of the World
+
+		add_political_reform = {
+			base = 1
+		}
+		remove_political_reform = {
+			base = 0
+		}
+		add_social_reform = {
+			base = 1
+		}
+		remove_social_reform = {
+			base = 0
+		}
+	}
+	##Special Anarchist
+}
+
+## Socialist Parties ##
+socialist_group = {
+	##Mainstream Socialist
+	# Socialist Shell #
+	socialist = {
+		uncivilized = no
+		color = { 255 0 0 }
+		date = 1864.9.29 #First International
+
+		add_political_reform = {
+			base = 0
+			group = {
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 1
+						political_movement_strength = 0.1
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 2
+						political_movement_strength = 0.2
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 3
+						political_movement_strength = 0.3
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 4
+						political_movement_strength = 0.4
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 5
+						political_movement_strength = 0.5
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 6
+						political_movement_strength = 0.6
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 7
+						political_movement_strength = 0.7
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 8
+						political_movement_strength = 0.8
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						militancy = 9
+						political_movement_strength = 0.9
+					}
+				}
+			}
+		}
+		remove_political_reform = {
+			base = 0
+		}
+		add_social_reform = {
+			base = 1
+		}
+		remove_social_reform = {
+			base = 0
+		}
+	}
+	# Democratic Socialists #
+	democratic_socialist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Revolutionary Socialists #
+	revolutionary_socialist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# Libertarian Socialism #
+	libertarian_socialist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	##Special Socialists
+	# Anti-Imperialists #
+	anti_imperialist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+}
+
+## Communist Parties ##
+communist_group = {
+	##Mainstream Communist
+	# Communist Shell #
 	communist = {
 		uncivilized = no
 		color = { 150 10 10 }
 		date = 1889.7.14 #Second International
-		
+
 		add_political_reform = {
 			base = 0
 			group = {
 				modifier = {
 					factor = 0.08
-					OR = { 
+					OR = {
 						militancy = 2
 						political_movement_strength = 0.1
 					}
 				}
 				modifier = {
 					factor = 0.9
-					OR = { 
+					OR = {
 						militancy = 3
 						political_movement_strength = 0.2
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 4
 						political_movement_strength = 0.3
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 5
 						political_movement_strength = 0.4
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 6
 						political_movement_strength = 0.5
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 7
 						political_movement_strength = 0.6
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 8
 						political_movement_strength = 0.7
 					}
 				}
 				modifier = {
 					factor = 0.1
-					OR = { 
+					OR = {
 						militancy = 9
 						political_movement_strength = 0.8
 					}
 				}
 				modifier = {
 					factor = 0.3
-					OR = { 
+					OR = {
 						militancy = 9.5
 						political_movement_strength = 0.9
 					}
@@ -446,91 +1178,76 @@ socialist_group = {
 		}
 		remove_social_reform = {
 			base = 0
-		}	
+		}
 	}
-	
-	# Socialists #
-	socialist = {
-		uncivilized = no
-		color = { 255 0 0 }
-		date = 1864.9.29 #First International
-		
+	# Marxists #
+	marxist = {
+		color = { 255 255 0 }
+
 		add_political_reform = {
 			base = 0
-			group = {
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 1
-						political_movement_strength = 0.1
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 2
-						political_movement_strength = 0.2
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 3
-						political_movement_strength = 0.3
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 4
-						political_movement_strength = 0.4
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 5
-						political_movement_strength = 0.5
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 6
-						political_movement_strength = 0.6
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 7
-						political_movement_strength = 0.7
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 8
-						political_movement_strength = 0.8
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 9
-						political_movement_strength = 0.9
-					}
-				}
-			}
 		}
 		remove_political_reform = {
-			base = 0
-		}
-		add_social_reform = {
 			base = 1
 		}
-		remove_social_reform = {
+		add_social_reform = {
 			base = 0
 		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
 	}
+	# Leninists #
+	leninist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	# National Syndicalism #
+	national_syndicalist = {
+		color = { 255 255 0 }
+
+		add_political_reform = {
+			base = 0
+		}
+		remove_political_reform = {
+			base = 1
+		}
+		add_social_reform = {
+			base = 0
+		}
+		remove_social_reform = {
+			base = 1
+		}
+		add_military_reform = {
+			base = -1
+		}
+		add_economic_reform = {
+			base = -1
+		}
+	}
+	##Special Communist
 }
